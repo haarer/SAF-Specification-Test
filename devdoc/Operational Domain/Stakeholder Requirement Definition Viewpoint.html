@@ -1,0 +1,211 @@
+
+<p><strong>O6_SKRD</strong> Stakeholder Requirement Definition Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#operational-domain">Operational</a></td>
+      <td><a href="../../userdoc/aspects.html#requirement-aspect">Requirement</a></td>
+      <td><img src="/assets/images/maturity-released.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_6d8019d_1690464242065_940654_27027.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Stakeholder Requirement Definition Viewpoint specifies all capabilities, functions and properties, that the intended solution shall possess or expose from the perspective of the Stakeholders. The Stakeholder Requirement Definition Viewpoint also captures constraints for the system to be developed from stakeholders perspective.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Stakeholder Requirement Viewpoint supports the “Stakeholder Needs and Requirements Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2015 [§ 4.2] and contributes to the identification of solution constraints.</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A tabular format lisiting</p>
+<ul>
+  <li>unique requirement ID, text, and attributes,</li>
+  <li>traceability reference to justifying model artefacts, e.g. operational stories, operational capabilities, identified concerns of stakeholders, and compliance statements
+Note: Stakeholder Requirements are to be structured in a way that the Stakeholder behind the Requirement is identifiable. When appropriate, the relationships between identified Stakeholder Requirements are and the justifying model artefacts, Operational Story, Operational Capability, Operational Performer, Operational Process, and Operational Exchange are presented.</li>
+  <li>“One Requirement Package for each Stakeholder” is a best-practice modeling rule. A package contains the Requirements specific for one Stakeholder.</li>
+  <li>Even if different Stakeholders may have intersecting interests and / or concerns resulting in a similar set of Requirements, each Stakeholder shall have its own set managed in a dedicated Requirement Package. Requirements must not be shared due to their different life cycles. Resolving duplications and conflicts is subject of the requirement analysis resulting in an agreed and consolidated set of System Requirements.</li>
+</ul>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567280211417_154511_52831"> Acquirer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653236737_36605_43554"> Customer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758810_143872_23303"> What are the normal and extreme environmental conditions for normal operation, for not operational, for storage, and for transport? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758798_122991_23285"> What are the requirements of environmental conditions imposed on the system? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758774_361095_23253"> What are the requirements that a Stakeholder imposes on the system? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758818_166273_23310"> What defines a valid solution towards the customer? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576759042_480392_23467"> What is the range of acceptable system performance, i.e. the critical, top-level performance requirements derived from the operational needs? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_3_8710274_1581676828664_176399_54365">SAF_OperationalCapability</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_1_8710274_1552023067867_433281_43825">SAF_OperationalStory</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_3_6d8019d_1600679857332_333392_618">SAF_StakeholderRequirementImposition</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704885298_713292_7913">Package</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_3_6d8019d_1609148130261_947486_570">SAF_StakeholderRequirementRefinement</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_2_164f041e_1564562840570_263949_52838">SAF_StakeholderRequirement</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1567750318852_177696_53167">SAF_SystemOfInterestConcern</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1565094689606_808099_51895">SAF_Stakeholder</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+
+<li><a href="Stakeholder Identification Viewpoint.html">Stakeholder Identification Viewpoint</a></li>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+
+<li><a href="Operational Story Viewpoint.html">Operational Story Viewpoint</a></li>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_2_26f0132_1565093441772_643156_49330.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_3_8710274_1581665911562_310714_48925">Operational Capability</a></td><td>A Operational Capability is a high-level description or specification of an organizational unit's ability to execute a specified course of action, to implement a business process or to provide a service. Operational Capabilities typically require people, processes, infrastructure, technology and supporting systems to be implemented.  A Operational Capability is an enduring element, its implementation may change over time. A necessary or desired change of a Operational Capability triggers the updated of involved systems or the integration new systems.
+
+Aliases:
+UAF::Capability
+NAF4::Capability</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561750989144_963009_48675">Operational Story</a></td><td>The Operational Story represents one or more Operational Use Cases in the Usage Scenario identified by the Operational Context. The Operational Story is described as narrative story-telling.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1565103209454_619592_55337">Compliance Statement</a></td><td>Used in the communication between Stakeholder (Customer) and Contractor. Compliance Statements are the first answer to the Stakeholder Requirements and are usually together with the Stakeholder Requirements part of the contract. They are valuable input for the System development and System Requirement elicitation. Information status:
+* not compliant (with explanation / rationale)
+* partially compliant (with explanation / rationale)
+* fully compliant</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1565103607495_867687_55406">CSTconfirmingSHR</a></td><td>Specifies the fact that a Stakeholder Requirement has certain States of Compliance.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1558520103521_679129_44321">SHRimposedBY</a></td><td>Specifies the fact that a Stakeholder Requirement is provided by Stakeholders.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1558520697796_594436_44679">SHRrefiningCRN</a></td><td>Specifies the fact that a Stakeholder Concern is refined by Stakeholder Requirements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1567606884034_616995_54129">SHRrefiningOCY</a></td><td>Specifies the fact that an Operational Capability is refined by Stakeholder Requirements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_6d8019d_1609067438603_923129_400">SHRrefiningOSY</a></td><td>Specifies the fact that an Operational Story is refined by Stakeholder Requirements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1558520000264_403052_44141">Stakeholder Requirement</a></td><td>A Stakeholder Requirement is a Requirement imposed by a Stakeholder. Stakeholder Concerns are refined by Stakeholder Requirements applicable for the SOI. The Stakeholder Requirements are a result of discussions and agreements of how the SOI addresses the Concerns of the respective Stakeholder.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1558519985294_233543_44077">System of Interest Concern</a></td><td>Any kind of interest a Stakeholder has. 
+Note: Redundant with the meaning of "Need"?</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1558519956748_646834_44043">System of Interest Stakeholder</a></td><td>An individual, team, or organization (or classes thereof) with interests in, or concerns relative to, a system. It may be involved in any life cycle phase of the System. The Stakeholder represents a class or kind of Stakeholders. Stakeholders have a certain involvement: Stakeholder Involvement captures the influence of a project specific Stakeholder on the System. Stakeholder Involvement is characterized by
+* Contact Person
+* Kind of involvement
+* Life Cycle Phases involved
+* Relevance decision if and up to which degree Stakeholder is considered
+* Rationale for decision when Stakeholder is not considered</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_2_26f0132_1565097969505_427234_53662.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_8710274_1581665911562_310714_48925">Operational Capability</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_3_8710274_1581676828664_176399_54365">SAF_OperationalCapability</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561750989144_963009_48675">Operational Story</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_1_8710274_1552023067867_433281_43825">SAF_OperationalStory</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1565103209454_619592_55337">Compliance Statement</a></td><td><a href="../../userdoc/stereotypes.html#"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1565103607495_867687_55406">CSTconfirmingSHR</a></td><td><a href="../../userdoc/stereotypes.html#"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1558520103521_679129_44321">SHRimposedBY</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_3_6d8019d_1600679857332_333392_618">SAF_StakeholderRequirementImposition</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1558520697796_594436_44679">SHRrefiningCRN</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_3_6d8019d_1609148130261_947486_570">SAF_StakeholderRequirementRefinement</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1567606884034_616995_54129">SHRrefiningOCY</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_3_6d8019d_1609148130261_947486_570">SAF_StakeholderRequirementRefinement</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_6d8019d_1609067438603_923129_400">SHRrefiningOSY</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_3_6d8019d_1609148130261_947486_570">SAF_StakeholderRequirementRefinement</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1558520000264_403052_44141">Stakeholder Requirement</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_2_164f041e_1564562840570_263949_52838">SAF_StakeholderRequirement</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1558519985294_233543_44077">System of Interest Concern</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1567750318852_177696_53167">SAF_SystemOfInterestConcern</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1558519956748_646834_44043">System of Interest Stakeholder</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1565094689606_808099_51895">SAF_Stakeholder</a></td></tr>
+</table>

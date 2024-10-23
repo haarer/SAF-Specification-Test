@@ -1,0 +1,160 @@
+
+<p><strong>L4_LITI</strong> Logical Internal Interaction Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#logical-domain">Logical</a></td>
+      <td><a href="../../userdoc/aspects.html#interaction--collaboration-aspect">Interaction &amp; Collaboration</a></td>
+      <td><img src="/assets/images/maturity-released.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_18_4_3c00182_1480317908724_604299_35483.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Logical Internal Interaction Viewpoint describes System internal behavior based on the exchange between the Logical SOI Elements Usage. It depicts the sequence of interactions between the Logical SOI Elements and the exchanged Domain Item Kinds needed to accomplish a System Partial Function.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Logical Internal Interaction Viewpoint supports the “Develop Architecture Viewpoints” and the “Develop Models and Views of Candidate Architectures” activity included in the “Architecture Definition process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2015 [§ 4.4] and contributes to the System Architecture description.</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A sequence diagram featuring the flow of control between Internal Logical Elements of the SOI.
+Note: This diagram depicts the sending and receiving of messages between the interacting entities called lifelines where time is represented along the vertical axis. The lifeline representatives are part properties typed by Logical System Elements.</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567280211417_154511_52831"> Acquirer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653236737_36605_43554"> Customer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_933874_92402"> Hardware Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_525021_92401"> IV&amp;V Engineer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653238260_245225_43556"> Operator </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_410133_92403"> Safety Expert </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567337062655_160733_52757"> Security Expert </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_98534_92400"> Software Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567280920665_435327_53193"> User </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758760_611640_23247"> How do the logical system elements interact to provide the system functions? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758991_165534_23433"> What are the items exchanged between logical system elements during an interaction? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576759095_626726_23511"> What is the necessary response time for an interface or a service? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704888195_415551_8289">Message</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1698318103660_937765_37340"></a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704887901_869040_8246">Interaction</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704887938_842870_8254">Lifeline</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+
+<li><a href="Logical Structure Definition Viewpoint.html">Logical Structure Definition Viewpoint</a></li>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+
+<li><a href="System Process Viewpoint.html">System Process Viewpoint</a></li>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_26f0132_1582314373826_203815_54129.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1582315257123_533586_56785">Logical Chronological Message</a></td><td>Ordered sequential occurrence of exchanges between Logical Interaction Scenario Participants.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_981340_91082">Logical Element Role</a></td><td>Specifies the fact that a logical element comprises logical elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1582314602701_812421_56211">Logical Interaction Scenario</a></td><td>Ordered sequence of exchanges of information, energy, or material between Logical Interaction Scenario Participants.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1582315087346_20721_56621">Logical Scenario Participation</a></td><td>Specifies the fact that a Logical Element Role participates in a Logical Interaction Scenario.</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_26f0132_1582314374138_941902_54211.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1582315257123_533586_56785">Logical Chronological Message</a></td><td><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704888195_415551_8289"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_981340_91082">Logical Element Role</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1698318103660_937765_37340"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1582314602701_812421_56211">Logical Interaction Scenario</a></td><td><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704887901_869040_8246"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1582315087346_20721_56621">Logical Scenario Participation</a></td><td><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704887938_842870_8254"></a></td></tr>
+</table>

@@ -1,0 +1,166 @@
+
+<p><strong>P2_PSTD</strong> Physical Structure Definition Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#physical-domain">Physical</a></td>
+      <td><a href="../../userdoc/aspects.html#taxonomy--structure-aspect">Taxonomy &amp; Structure</a></td>
+      <td><img src="/assets/images/maturity-released.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1697094226233_690625_61278.svg" /></p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1697094208337_28998_60403.svg" /></p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1697094192388_776226_59528.svg" /></p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1695631251919_634817_31111.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Physical Structure Viewpoint is used to model the internal structure of the SOI and to identify the internal system elements making up the SOI. The SOI breakdown structure identifies system elements and finally at the implementation level hardware, software, and mechanics. The SOI breakdown structure determines items that are reused and make-or-buy (COTS) items. The Physical Structure Viewpoint is elaborated for each candidate physical SOI architecture. It provides the basis for further assessment of the architecture candidates by identifying the system elements in each candidate solution.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Physical Structure Viewpoint supports the “Design Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.5] and contributes to the artifact “System Design Description”.</p>
+
+<p>Furthermore, the Physical Structure Viewpoint supports the “Allocation and Partitioning of Logical Entities to Physical Entities” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2015 [§4.4.2.7].</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A block definition diagram (BDD) featuring the physical system block and physical blocks for any kind of physical element, HW or SW elements, the system is composed of. These elements are connected to the system block by means of aggregation relationships. 
+Note: Multiple relationships to a kind of element are allowed meaning, that this kind of element is used in several roles.</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_525021_92401"> IV&amp;V Engineer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_410133_92403"> Safety Expert </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567337062655_160733_52757"> Security Expert </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576759117_113432_23531"> What is the physical breakdown of the system? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_1_8710274_1547464071851_635988_42197">SAF_PhysicalSystem</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695809841236_544249_27160">SAF_PhysicalInternalRole</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558090490396_87116_48464">SAF_PhysicalHardwareElement</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558090585793_420384_48529">SAF_PhysicalElement</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558090471537_935611_48414">SAF_PhysicalSoftwareElement</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_ebf0350_1580652073344_557638_53710.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1558075337119_355128_45325">Physical SOI</a></td><td>Represents the Physical SOI on Physical Level.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_174876_91086">Hardware Element Role</a></td><td>Specifies the fact that a hardware structure comprises hardware elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_845534_91075">Hardware Element</a></td><td>Pure Hardware Elements. Similarity with the V-Model "hardware unit".</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_635820_91087">Physical Element Role</a></td><td>Specifies the fact that a physical structure comprises physical elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_824595_91079">Physical Element</a></td><td>A composition of Hardware and Software Elements. Similarity with the V-Model segments and system. See [VXT].</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_672620_91085">Physical Hardware Role</a></td><td>Specifies the fact that a physical structure comprises hardware elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_61581_91084">Physical Software Role</a></td><td>Specifies the fact that a physical structure comprises software elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_594816_91083">Software Element Role</a></td><td>Specifies the fact that a software structure comprises software elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_251302_91078">Software Element</a></td><td>Pure Software Elements. Similarity with the V-Model "software unit".</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_ebf0350_1580652073406_608092_53741.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1558075337119_355128_45325">Physical SOI</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_1_8710274_1547464071851_635988_42197">SAF_PhysicalSystem</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_174876_91086">Hardware Element Role</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695809841236_544249_27160">SAF_PhysicalInternalRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_845534_91075">Hardware Element</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558090490396_87116_48464">SAF_PhysicalHardwareElement</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_635820_91087">Physical Element Role</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695809841236_544249_27160">SAF_PhysicalInternalRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_824595_91079">Physical Element</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558090585793_420384_48529">SAF_PhysicalElement</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_672620_91085">Physical Hardware Role</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695809841236_544249_27160">SAF_PhysicalInternalRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_61581_91084">Physical Software Role</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695809841236_544249_27160">SAF_PhysicalInternalRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_594816_91083">Software Element Role</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695809841236_544249_27160">SAF_PhysicalInternalRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_251302_91078">Software Element</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558090471537_935611_48414">SAF_PhysicalSoftwareElement</a></td></tr>
+</table>

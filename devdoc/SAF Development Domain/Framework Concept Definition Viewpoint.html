@@ -1,0 +1,125 @@
+
+<p><strong>D2_COTD</strong> Framework Concept Definition Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#saf development-domain">SAF Development</a></td>
+      <td><a href="../../userdoc/aspects.html#taxonomy--structure-aspect">Taxonomy &amp; Structure</a></td>
+      <td><img src="/assets/images/maturity-under-construction.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#under construction">under construction</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_8710274_1581665834898_520724_48775.svg" /></p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_8710274_1581665859314_612977_48817.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Framework Concept Viewpoint allows to define SE concepts and their relationships to be supported by the SAF. It shall specifiy</p>
+<ul>
+  <li>the concepts with comprehensive documentation</li>
+  <li>the relationships of concepts with comprehensive documentation and allowable multiplicities</li>
+  <li>constraints among relations and concepts if applicable.</li>
+</ul>
+
+<p>The viewpoint is intended to be used for development or extension of the SAF.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Viewpoint supports the definition of  “Architecture description (AD) elements”,   and the definition of “AD element correspondence”  and  “Specification of an architecture description framework” as defined in ISO42010:2022</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A Block Definition Diagram (BDD)  featuring elements of SCM_Concept representing SE concepts to be supported by SAF. SCM_Concept can be classes of items and relations between items. It is also possible to create relations to relations (SCM_Concepts can be Classes, Associations and Association Classes).
+For relational concepts, it is reqired to display the direction, and to define the multiplicities. See SAF Development Guide for details on concept modeling conventions</p>
+
+<p>A table featuring SCM_Concepts and their descriptions. In case of relational concepts the related concepts are shown also.</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../../userdoc/stakeholders.html#_2024x_26f0132_1719129287848_367992_14650"> SAF Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_2024x_26f0132_1719129568628_636824_14722"> SAF MBSE approch planer </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2024x_26f0132_1719129923965_578278_14750"> Which systems engineering concepts are covered by the framework? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2024x_1_26f0132_1727272903091_424205_15904"> what are the constraints related to se concepts covered by the framework?  </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2024x_1_26f0132_1727272724178_60816_15898"> what are the relations between systems engineering concepts covered by the framework? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_1_26f0132_1554446849880_209491_45751">SCM_Concept</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+
+<li><a href="Framework Stakeholder Definition Viewpoint.html">Framework Stakeholder Definition Viewpoint</a></li>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_2024x_26f0132_1719735639180_810002_26540.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_2024x_26f0132_1719749431514_697590_16049">SE Concept</a></td><td>specifies a SE concept to be supported by SAF</td></tr>
+<tr><td><a href="../concepts.html#_2024x_26f0132_1719749468596_132410_16077">SECrelatesToSEC</a></td><td>specifies a relationship of a concept to an other.</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_2024x_26f0132_1719735639175_933479_26524.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2024x_26f0132_1719749431514_697590_16049">SE Concept</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_1_26f0132_1554446849880_209491_45751">SCM_Concept</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2024x_26f0132_1719749468596_132410_16077">SECrelatesToSEC</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_1_26f0132_1554446849880_209491_45751">SCM_Concept</a></td></tr>
+</table>

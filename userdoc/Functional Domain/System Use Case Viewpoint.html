@@ -1,0 +1,142 @@
+
+<p><strong>F1_SUCD</strong> System Use Case Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../domains.html#functional-domain">Functional</a></td>
+      <td><a href="../aspects.html#context--exchange-aspect">Context &amp; Exchange</a></td>
+      <td><img src="/assets/images/maturity-released.svg" height="20" width="20" /><a href="../maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_4_6d8019d_1626717318881_416688_987.svg" /></p>
+
+<p><img src="../../diagrams/examples_md/exa_18_2_3c00182_1453969195787_418001_22174.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The System Use Case Viewpoint provides an outside view on the system functionality from the perspective of the system users and contributes to the definition of system requirements and system usage. The intended system use may be captured as free-text use case description, as well as storytelling approach on a coarse level of detail. The main system exchange partners participating in the intended system use are identified. System use cases are related to a specific system context. System use cases are derived from operational scenarios elaborated during mission analysis.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The System Use Case Viewpoint supports the “Stakeholder Needs and Requirements Definition Process” and the “System Requirements Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.2, §2.3.5.3] and contributes to the definition of the system boundary and the identification of the expected system function.</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A use case diagram featuring model elements representing System Use Cases, System Context, and System Context Elements. The System Context shall be used as subject of the use case. The System Context Elements playing a Role in the Use Case shall be connected to the Use Case by associations.
+Note: System Use Case pre- and postconditions shall be represented either by callout or compartment notation.
+Relationship to operational stories can be related to the use case in order trace to mission analysis.</p>
+
+<p>A tabular format listing the System Use Cases, the System Use Case pre- and postconditions, the System Context, and the System Context Elements. Additionaly, the relationship to operational stories, if applicable.</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1567280211417_154511_52831"> Acquirer </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1554653236737_36605_43554"> Customer </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_26f0132_1562303526473_525021_92401"> IV&amp;V Engineer </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1554653238260_245225_43556"> Operator </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1567281039295_665940_53199"> Project Manager </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1567280920665_435327_53193"> User </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../concerns.html#_2021x_2_6d8019d_1674945898325_22078_35809"> For what purpose is the system developed or adapted? </a></li>
+
+
+<li><a href="../concerns.html#_2021x_2_8710274_1674576758841_451500_23327"> How is the system being used or utilized and interacting with other external systems to satisfy user needs? </a></li>
+
+
+<li><a href="../concerns.html#_2021x_2_8710274_1697469571914_800497_36599"> What has the system to accomplish for its users? </a></li>
+
+
+<li><a href="../concerns.html#_2021x_2_6d8019d_1674922633861_96675_24986"> Which are the system scenarios, i.e., course of action, for the system context in which the system solution will exist? </a></li>
+
+
+<li><a href="../concerns.html#_2021x_2_6d8019d_1675459822996_961402_23325"> Which users does the system support?  </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_4_6d8019d_1617440763282_465948_2187">SAF_LogicalContextElementActing</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_2_26f0132_1562313107961_803548_148677">SAF_LogicalEnvironment</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_1_26f0132_1547202431219_827789_42473">SAF_LogicalExternalSystem</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_2_26f0132_1558076033373_157322_46890">SAF_LogicalContext</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_2_26f0132_1558076117783_295122_47010">SAF_LogicalUser</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_4_6d8019d_1630778868755_864755_338">SAF_SystemUseCaseEnabling</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1697273945667_128653_30263">PostConditionStates</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1697273920739_355569_30251">PreConditionStates</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1697273420898_578612_29983">subject</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_1_8710274_1552023067867_433281_43825">SAF_OperationalStory</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_1_8710274_1552023080917_369823_43852">SAF_SystemUseCase</a></li>
+
+</ul>
+
+<h2 id="related-viewpoints">Related Viewpoints</h2>
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+
+<li><a href="../Functional Domain/System Context Definition Viewpoint.html">System Context Definition Viewpoint</a></li>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+
+<li><a href="../Operational Domain/Operational Story Viewpoint.html">Operational Story Viewpoint</a></li>
+
+</ul>

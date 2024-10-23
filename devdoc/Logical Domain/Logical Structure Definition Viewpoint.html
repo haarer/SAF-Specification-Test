@@ -1,0 +1,121 @@
+
+<p><strong>L2_LSTD</strong> Logical Structure Definition Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#logical-domain">Logical</a></td>
+      <td><a href="../../userdoc/aspects.html#taxonomy--structure-aspect">Taxonomy &amp; Structure</a></td>
+      <td><img src="/assets/images/maturity-released.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_18_1_3c00182_1450814089561_466464_50381.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Logical Structure Definition Viewpoint describes how the system is decomposed into a hierarchical structure of logical elements responsible for different system functions (divide &amp; conquer principle). It covers related logical concepts and principles that support the logical operation of the system and is widely reusable among similar systems like product families, or product generations.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Logical Structure Viewpoint supports the “System Architecture Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.4] and contributes to the artifact “System Architecture Description”.</p>
+
+<p>Furthermore, the Logical Structure Viewpoint supports the “Allocation and Partitioning of System Functions to Logical Entities” activities.</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A block definition diagram (BDD) featuring the logical system block and logical blocks for any kind of logical element the system is composed of. These elements are connected to the system block by means of aggregation relationships. 
+Note: Multiple relationships to a kind of element are allowed meaning, that this kind of element is used in several roles.</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758828_494985_23322"> What is the logical breakdown of the system? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_1_8710274_1547464060642_374530_42162">SAF_LogicalSOI</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1698318103660_937765_37340"></a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_1_26f0132_1547201742246_537565_42154">SAF_LogicalElement</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+
+<li><a href="System Functional Breakdown Structure Viewpoint.html">System Functional Breakdown Structure Viewpoint</a></li>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+
+<li><a href="System Process Viewpoint.html">System Process Viewpoint</a></li>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_2_26f0132_1562303529036_923400_94274.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1558075212525_51415_45174">Logical Context SOI</a></td><td>Represents the Logical SOI in the System Context on Logical Level.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_981340_91082">Logical Element Role</a></td><td>Specifies the fact that a logical element comprises logical elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_845719_91080">Logical Element</a></td><td>Describes a conceptual Logical Element as specification for an implementation of a system, or system element.</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_2_26f0132_1562303529036_753566_94295.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1558075212525_51415_45174">Logical Context SOI</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_1_8710274_1547464060642_374530_42162">SAF_LogicalSOI</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_981340_91082">Logical Element Role</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1698318103660_937765_37340"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_845719_91080">Logical Element</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_1_26f0132_1547201742246_537565_42154">SAF_LogicalElement</a></td></tr>
+</table>

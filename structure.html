@@ -1,0 +1,64 @@
+<h1 id="framework-structure">Framework Structure</h1>
+
+<h3 id="stakeholders-of-the-architecture-and-their-information-need">Stakeholders of the Architecture and their Information Need</h3>
+<p>SAF partitions the amount of modeling work for e.g. a whole system architecture into smaller parts, which each deliver value for <a href="faq.md#stakeholders">stakeholders of the architecture</a> by satisfying their information needs.</p>
+
+<h3 id="viewpoints-satisfying-information-needs">Viewpoints satisfying Information Needs</h3>
+<p>These smaller parts are called <a href="faq.md#viewpoints">viewpoints</a>. They each serve a certain purpose, adress stakeholders <a href="faq.md#concerns">concerns</a> by presenting stakeholders a subset of the whole model.</p>
+
+<h3 id="viewpoints-used-to-plan-and-partition-work">Viewpoints used to plan and partition work</h3>
+<p>This allows to partition and plan the work on the MBSE effort according to the problem at hand and helps to focus to the most important parts of the work. A MBSE approach can be planned by defining which viewpoints must be worked on in which phase of the MBSE effort, and it also could prioritize work or define different depths of elaboration for the viewpoints to work on.</p>
+
+<p>Because of this, SAF helps to execute an MBSE effort by a plan which is backed by reasoning about the information need of stakeholders.</p>
+
+<h3 id="viewpoints-guide-modeling-effort-to-deliver-stakeholder-value">Viewpoints guide modeling effort to deliver stakeholder value</h3>
+<p>The viewpoints specify, which model elements shall be created in which kind of diagrams to serve the viewpoints purpose and adress the concerns of the stakeholders interested in the viewpoints.</p>
+
+<h3 id="saf-viewpoint-grid">SAF Viewpoint Grid</h3>
+<p>The SAF Viewpoints are organized as a Grid featuring <a href="./userdoc/domains.md">Domains</a> as rows and <a href="./userdoc/aspects.md">Aspects</a> as columns.</p>
+
+<h3 id="domains-follow-engineering-workflow">Domains follow engineering workflow</h3>
+<p>The <a href="./userdoc/domains.md">Domains</a>  are oriented by a typical engineering workflow.</p>
+<ul>
+  <li>The <a href="./userdoc/common.md">Common Domain</a> contains workflow overarcing content such as Terms and Standards.</li>
+  <li>The <a href="./userdoc/operational.md">Operational Domain</a> adresses information need during the concept phase (Mission Analysis and Stakeholder Requirements elicitation)</li>
+  <li>The <a href="./userdoc/functional.md">Functional Domain</a> adresses information needs during the System Requirements Definition Process (The System blackbox on a conceptual level)</li>
+  <li>The <a href="./userdoc/logical.md">Logical Domain</a> adresses information needs during the Architecture Definition Process (the System Whitebox on conceptual level)</li>
+  <li>The <a href="./userdoc/physical.md">Physical Domain</a> adresses information needs during the Design Definition Process (the System Black Box and Whitebox on solution / design level)</li>
+</ul>
+
+<h3 id="aspects-follow-kinds-of-concerns">Aspects follow kinds of concerns</h3>
+<p>The  <a href="./userdoc/aspects.md">Aspects</a> are oriented by the kind of information needs, e.g. questions about structure are answered by viewpoints in the taxonomy and structure aspect. Typically similar kinds of questions need to be answered in multiple domains, hence the organisation of grid columns.</p>
+
+<p><img src="./assets/images/SAF_Viewpoint-Grid-Structuring-Formalism.svg" alt="SAF Grid" /></p>
+
+<h2 id="recursive-application-of-the-framework-due-to-system-decomposition">Recursive Application of the Framework due to System decomposition</h2>
+<p>Typically, a system consists of subsystems in multiple <a href="faq.md#system-hierarchy">hierarchy or decomposition</a> levels.</p>
+
+<p>The Functional, Logical and Physical Domain are applied recursively for system and subsystems.</p>
+
+<p>Since the Mission Analysis and Stakeholder Requirements definition Processes cover the whole system, they are typically executed with the top level system scope. (These processes may require iterations when something new is learned, e.g. new stakeholders might be discovered during the selection of solutions for a subsystem, requiring the content of operational domain viewpoints to be updated)</p>
+
+<p>The same applies to the Common Domain, it is also valid for all decomposition levels.</p>
+
+<p class="todo">here an image of the vee should be shown with decomposition levels and domains covering the whole vee and others repeated. we could also show a decomposition tree, and the dev workflow tree with the gates (scr, srr, pdr, cdr)*</p>
+
+<h2 id="application-to-system-of-systems">Application to System of Systems</h2>
+<p>A System of Systems(SoS)<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> approach might take advantage from separate operational domain descriptions for each system, while sharing some overarcing elements.</p>
+
+<p>The MBSE work on system of systems could share a common model supportin a concept of operations (ConOps), in a common model library, and have individual operational domain descriptions supporting the OpsCon of the individual systems.</p>
+
+<p>The approach should be selected according to the constraints of the SoS scenario; the degree of involvement of different organization cooperation in an SoS MBSE effort, especially the stakeholders having an interest in the SoS model.</p>
+
+<h2 id="typical-engineering-workflow">Typical Engineering Workflow</h2>
+
+<p class="todo">here an image of the Vee should be placed with domains showing where on the vee, or a workflow with the gates. a detail view should show flow through the viewpoints, perhaps with key concerns they adress.
+This is complex. details must go to multiple sub pages, possibly organized by SEHB phases. There are also different usage scenarios of SAF</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Note, that SoS is not just a decomposition - the term should only be used for scenarios which add complexity by independently developed and or operated systems with independent lifecycles, lacking overarcing planning or even agreement. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>

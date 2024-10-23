@@ -1,0 +1,158 @@
+
+<p><strong>O1_OCXE</strong> Operational Context Exchange Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#operational-domain">Operational</a></td>
+      <td><a href="../../userdoc/aspects.html#context--exchange-aspect">Context &amp; Exchange</a></td>
+      <td><img src="/assets/images/maturity-released.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_4_6d8019d_1629636631575_609870_17878.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Operational Context Exchange Viewpoint provides the operational exchange of systems, personnel, information, material, energy, etc. between operational performers.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Operational Context Exchange Viewpoint supports the “Business or Mission Analysis Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.1] and contributes to both the problem or opportunity statement, and the Major Stakeholder Identification.</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>An internal block diagram (IBD) - associated to the operational context - featuring the interconnected operational performers in their respective operational role, and the operational item exchange per operational connection.</p>
+
+<p>A tabular format listing [tbd].</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567280211417_154511_52831"> Acquirer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653236737_36605_43554"> Customer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_410133_92403"> Safety Expert </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567337062655_160733_52757"> Security Expert </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758910_672482_23380"> Which operational exchanges do operational performers need to consume or provide? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1629637155053_836431_340">SAF_OperationalContextRole</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_3_26f0132_1581502754179_833407_156439">SAF_OperationalContext</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1618158382195_41606_448">SAF_OperationalDomainKind</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704884559_152470_7636">Connector</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_11_0_be00301_1147691436170_978680_223">ItemFlow</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+
+<li><a href="Operational Context Definition Viewpoint.html">Operational Context Definition Viewpoint</a></li>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+
+<li><a href="Operational Process Viewpoint.html">Operational Process Viewpoint</a></li>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_8710274_1583758832346_518338_54754.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1567694227019_837886_54521">Operational Context Role</a></td><td>An Operational Context Role represents a participant in an Operational context.
+It is interacting with other roles of the given Operational Context. Specific characteristics and features or, in case of persons or organizational units, knowledge and skills are assigned to a role necessary for the execution of the performed Operational Processes.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561763753175_522268_51960">Operational Context</a></td><td>An Operational Context is representing a separate Usage Scenario with a specific configuration of Operational Performers, these are interacting in the Scenario exhibiting a specific identified Operational Capability. One or more Operational Contexts meaningful for the Operational Domain are to be identified. 
+
+Aliases:
+UAF::HighLevelOperationalConcept</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1600783068816_502199_735">Operational Domain Kind</a></td><td>Specifies the kind of Operational Item Exchange between Operational Context Roles or Operational Processes.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1583963707692_371546_22970">Operational Connection</a></td><td>Specifies the connection between Operational Context Roles in an Operational Context allowing Operational Item Exchange.
+
+Aliases:
+UAF::OperationalConnector</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1583963832153_320549_23021">Operational Item Exchange</a></td><td>Specifies the Operational Item Exchange that is to take place on an Operational Connection.
+
+Aliases:
+UAF::OperationalExchange</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_8710274_1583758832627_571464_54816.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1567694227019_837886_54521">Operational Context Role</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1629637155053_836431_340">SAF_OperationalContextRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561763753175_522268_51960">Operational Context</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_3_26f0132_1581502754179_833407_156439">SAF_OperationalContext</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1600783068816_502199_735">Operational Domain Kind</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1618158382195_41606_448">SAF_OperationalDomainKind</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1583963707692_371546_22970">Operational Connection</a></td><td><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704884559_152470_7636"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1583963832153_320549_23021">Operational Item Exchange</a></td><td><a href="../../userdoc/stereotypes.html#_11_0_be00301_1147691436170_978680_223"></a></td></tr>
+</table>

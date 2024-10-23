@@ -1,0 +1,85 @@
+<h1 id="developer-documentation">Developer Documentation</h1>
+
+<h2 id="saf-development">SAF Development</h2>
+
+<p>SAF is developed to foster Model Based Systems Engineering, and itself is developed using also a model based approach. To avoid confusion among the different kinds of models, they are explained in the next chapter.</p>
+
+<h2 id="kinds-of-models">Kinds of Models</h2>
+
+<p><img src="./assets/images/Kinds-of-Models.svg" alt="Bild" /></p>
+
+<p>There are several kinds of models around SAF serving a certain purpose</p>
+
+<ul>
+  <li>
+    <p><strong>SAF System Model</strong></p>
+
+    <p>This is a model dedicated to the development of one or more systems. It is a model that users of SAF create and maintain. It may be maintained in one of the Tools supported by a SAF Profile Model. The SAF example model SAF_FFDS.mdzip is a System Model.</p>
+  </li>
+  <li>
+    <p><strong>SAF_Profile Model</strong>
+This is a model needed to create a SAF System Model. It is tool specific and (hopefully) compliant to the SAF Specification. There are currently several contributed models:</p>
+
+    <ul>
+      <li><a href="https://github.com/GfSE/SAF-Cameo-Profile">SAF-Cameo-Profile</a></li>
+      <li><a href="https://github.com/GfSE/SAF-Rhapsody-Profile">SAF-Rhapsody-Profile</a></li>
+      <li><a href="https://github.com/GfSE/SAF-EA-Profile">SAF-EA-Profile</a></li>
+    </ul>
+
+    <p>The Repositories usually also contain an example System Model</p>
+  </li>
+  <li>
+    <p><strong>SAF_Specification Model</strong>
+The specification model contains the definitions serving as foundation for SAF development. See the following chapter for details.</p>
+  </li>
+  <li>
+    <p><strong>SAF_SCM_Profile Model</strong>
+The SAF SCM Profile is used by the SAF_Specification model. It contains Stereotypes used to specify concepts, viewpoints, framework concerns and stakeholders. It is used to specify or extend SAF.</p>
+  </li>
+</ul>
+
+<h2 id="specification-model">Specification Model</h2>
+
+<p>The conceptual model is the foundation of SAF development.
+It governs, which items SAF consist of and how these items are related.
+It follows the concepts of ISO 42010. SAF extends ISO 42010 in a way that SAF is able to express a rationale for a Stakeholders Concern.</p>
+
+<p><img src="./assets/images/Concept-Model-Definition.svg" alt="Bild" /></p>
+
+<p>Within the conceptual model the following elements can be recognized (many of them are specializations of ISO 42010 Concepts):</p>
+
+<ul>
+  <li><strong>SAF Architecture Framework Stakeholders</strong>
+ are classes of users having an interest on the information that is maintained in a SAF System Model.</li>
+  <li><strong>SAF Architecture Framework Concerns</strong>
+ sketch out the information need of SAF Architecture Framework Stakeholders. The SAF Frameworks Viewpoints shall be designed in a way to frame these concerns, and in the end the information need should be adressed by a SAF System Model using the appropriate SAF Viewpoints.</li>
+  <li><strong>SAF Rationale</strong>
+ expains why a SAF Architectur Framework Stakeholder has abovementionend information need resulting in a SAF Architecture Framework Concern. This is currently not covered by ISO 42010.</li>
+  <li><strong>SAF Concepts</strong>
+ are the conceptual definition of items and their relationships forming an information network to be kept in a SAF System Model, in order to give answers to the SAF Architecture Framework Stakeholders Concerns.</li>
+  <li><strong>SAF Viewpoints</strong>
+select a set of SAF Concepts in order to adress the information need expressed by a certain set of abovementioned Stakeholers Concerns.
+In SAF the size of Viewpoints should be optimized to support tailoring by selection of viewpoints appropriate to the engineering problem at hand. This  means that SAF Viewpoints should adress only a small number of well defined Concerns.</li>
+  <li><strong>SAF Information Items</strong>
+ are like SAF Viewpoints but at a larger scale. They can group SAF Viewpoints while constraining them further. They also can be nested.
+This allows to specify Information Items like e.g. an ISO 29148 SyRS by breaking it down into smaller Information Items and finally into Viewpoints.
+This allows to define which concerns are to be adressed e.g. by a SyRS document and which viewpoints are needed for it.
+They also could be used to plan work items in order to plan a MBSE effort.
+The goal is, to precisely define the needed model work for certain points in an engieering project.</li>
+</ul>
+
+<p>Details are documented in the <a href="./metamodel-guideline/modelguideline.md">metamodeling guide</a>.</p>
+
+<h2 id="development-documentation-index">Development Documentation Index</h2>
+
+<p>The Development Documentation is separated from the User Documentation.
+It consists of</p>
+
+<ul>
+  <li><a href="saf-dev-guideline.md">Development Guideline</a></li>
+  <li><a href="metamodel-guideline/modelguideline.md">Metamodel Guide</a></li>
+  <li><a href="devdoc/concepts.html">List of Concepts</a></li>
+  <li><a href="./devdoc/concept-overview.md">Concept Overview Diagrams</a></li>
+  <li><a href="viewpoints/viewpoint-dev.md">Development view on SAF Viewpoints</a></li>
+</ul>
+

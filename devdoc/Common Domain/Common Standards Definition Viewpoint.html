@@ -1,0 +1,151 @@
+
+<p><strong>C2_CSTD</strong> Common Standards Definition Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#common-domain">Common</a></td>
+      <td><a href="../../userdoc/aspects.html#taxonomy--structure-aspect">Taxonomy &amp; Structure</a></td>
+      <td><img src="/assets/images/maturity-under-construction.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#under construction">under construction</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1700819581949_354470_51885.svg" /></p>
+
+<p><img src="../../diagrams/examples_md/exa_2024x_1_26f0132_1729187834545_976361_22741.svg" /></p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1700819812340_12506_51948.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Standards Definition Viewpoint supports the definition of applicable standards, e.g., for format and protocol specifications, regulations, and engineering documents that are used throughout the system life cycle. It provides the meta-data for the applied standards, guidance and policy, e.g., issue, version, issue date, and publisher. The Viewpoint helps to keep track of changes to the set of applicable documents and of new versions of applied standards. Links should be used to refer to documents external to the architecture description.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Standards Definition Viewpoint supports the definition of standards, and assignment of model elements to standards, during the technical processes and according to the information management process  of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 .</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A block definition diagram (BDD) featuring the taxonomy of types of standards,  applicable to the system of interest, or parts of the system of interest. The Standards are represented by packages which allows to use them in model libraries and put e.g. reusable interface definitions, or terms complying to the standard into the package</p>
+
+<p>A table format listing standards, applicable to the system of interest or parts of it, and the relation to which parts of the system the standards apply</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1700821579663_211989_58619"> Which are the relevant releases of the applicable standards, guidance, and policy to be used for the development of the system of interest and its system elements? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1700821592720_121043_58626"> Which other standards are referenced or referred to by applicable standards? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1700821558610_489259_58612"> Which standards, guidance, and policy are applicable to the system of interest or its system elements and their interfaces and interactions? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1701360709869_194778_91148">SAF_StandardCategoryAssignment</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2024x_1_26f0132_1729184994458_912940_16021"></a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1700817699465_496750_50736">SAF_StandardSuperseding</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1700810557668_637315_48235">SAF_Standard</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1700812596870_49325_49849">SAF_StandardizationOrganization</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1700819040067_20402_51257">SAF_StandardCategory</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1676722869288_930653_25081.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1700814367039_336586_50268">SDTcategorizedCOF</a></td><td>Specifies the fact that a standard is categorized by one or more categories.</td></tr>
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1700812231614_683776_49715">SDTincludingSDT</a></td><td>Specifies the fact that a standard is part of another standard.</td></tr>
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1700810378676_882309_48192">STDissuedBySTO</a></td><td>Specifies the fact that a standard is issued by an organization of standardization.</td></tr>
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1700817559642_660412_50682">SDTsupersedingSDT</a></td><td>Specifies the fact that a standard supersedes one or more other standards.</td></tr>
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1700810118595_556759_48108">Standard</a></td><td>Specifies a standard which shall potentially be complied by the system or a part of the system.
+</td></tr>
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1700810355233_788568_48161">Standardization Organization</a></td><td>An organization of standardization, e.g., International Organization for Standardization (ISO), Object Management Group (OMG), etc.</td></tr>
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1700813046483_995773_50081">Category Of Standard</a></td><td>Specifies categories in which the standard could be categorized , e.g.,  a data exchange format or a protocol standard, or categories as national, company or international standard.</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1676722869663_404667_25117.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1700814367039_336586_50268">SDTcategorizedCOF</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1701360709869_194778_91148">SAF_StandardCategoryAssignment</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1700812231614_683776_49715">SDTincludingSDT</a></td><td><a href="../../userdoc/stereotypes.html#_2024x_1_26f0132_1729184994458_912940_16021"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1700810378676_882309_48192">STDissuedBySTO</a></td><td><a href="../../userdoc/stereotypes.html#"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1700817559642_660412_50682">SDTsupersedingSDT</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1700817699465_496750_50736">SAF_StandardSuperseding</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1700810118595_556759_48108">Standard</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1700810557668_637315_48235">SAF_Standard</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1700810355233_788568_48161">Standardization Organization</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1700812596870_49325_49849">SAF_StandardizationOrganization</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1700813046483_995773_50081">Category Of Standard</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1700819040067_20402_51257">SAF_StandardCategory</a></td></tr>
+</table>
