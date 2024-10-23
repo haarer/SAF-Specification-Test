@@ -1,0 +1,178 @@
+
+<p><strong>F5_SIFD</strong> System Interface Definition Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#functional-domain">Functional</a></td>
+      <td><a href="../../userdoc/aspects.html#interface-aspect">Interface</a></td>
+      <td><img src="/SAF-Specification-Test/version/main/assets/images/maturity-released.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1679481494092_175667_26513.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The System Interface Definition Viewpoint captures system wide concepts defining interfaces. It allows to adopt long-lived standards and to harmonize conceptual interface definitions to improve interchangeability, interoperability, and portability.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The System Interface Definition Viewpoint supports the “prepare for system requirement definition” activity part of the “System Requirements Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.3] and contributes to the artifact “System Requirements Definition Report”.</p>
+
+<p>Furthermore, the viewpoint supports the “Interface Management” approach of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§3.2.4].</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A block definition diagram (BDD) featuring Conceptual Interface blocks with ports, and flow properties.</p>
+
+<p>A tabular format listing Conceptual Interface blocks, their ports, and flow properties.</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567280211417_154511_52831"> Acquirer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653236737_36605_43554"> Customer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_933874_92402"> Hardware Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_525021_92401"> IV&amp;V Engineer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1566037895381_430904_56516"> Maintainer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_410133_92403"> Safety Expert </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567337062655_160733_52757"> Security Expert </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_98534_92400"> Software Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1698695260372_8568_48717"> Which are the interface definitions for the logical architecture? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576759154_22704_23559"> Which kind of conceptual items (energy, material, information, etc.) are exchanged between the system and external entities? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758891_215548_23373"> Which standards, protocols, and format specifications apply to a physical interface? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1681817408348_216387_29249"></a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_3_26f0132_1614938958203_459716_5653">SAF_DomainKind</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1681818473370_517582_29594"></a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1681818167067_310281_29495"></a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_6d8019d_1692273490109_662219_24437">SAF_ConceptualInterfaceDefinition</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_11_5EAPbeta_be00301_1147436061009_177713_1911">FlowProperty</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_17_0_3_17530432_1320213131032_5397_2410">ProxyPort</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1676723513865_743807_26883.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303523801_353773_90762">SDKtypingLIPP</a></td><td>Specifies the fact that a System Domain Kind defines the type of a Logical Interaction Point Property.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561753378434_784618_50481">System Domain Kind</a></td><td>Specification for any kind of conceptual item (energy, material, information, etc.) to be exchanged on Functional or Logical Level. The System Domain Kind is agnostic to any realization on Physical Level.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_349234_91039">LIPDdefiningDetailOfLIP</a></td><td>Specifies the fact that a Logical Interaction Point Definition defines the exchange capabilities of a Logical Interaction Point.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_770729_91040">LIPPspecifyingDetailOfLIPD</a></td><td>Specifies the fact that a Logical Interaction Point Property is a detail of a Logical Interaction Point Definition.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_900081_91027">Logical Interaction Point Definition</a></td><td>Specifies the exchange capabilities of an interaction point on Logical Level.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_980387_91029">Logical Interaction Point Property</a></td><td>Specifies a detail of an interaction point on Logical Level.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_546931_91032">Logical Interaction Point</a></td><td>Specifies the existence of an interaction point on Logical Level.</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1676723513872_76778_26899.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303523801_353773_90762">SDKtypingLIPP</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1681817408348_216387_29249"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561753378434_784618_50481">System Domain Kind</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_3_26f0132_1614938958203_459716_5653">SAF_DomainKind</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_349234_91039">LIPDdefiningDetailOfLIP</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1681818473370_517582_29594"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_770729_91040">LIPPspecifyingDetailOfLIPD</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1681818167067_310281_29495"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_900081_91027">Logical Interaction Point Definition</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_6d8019d_1692273490109_662219_24437">SAF_ConceptualInterfaceDefinition</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_980387_91029">Logical Interaction Point Property</a></td><td><a href="../../userdoc/stereotypes.html#_11_5EAPbeta_be00301_1147436061009_177713_1911"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_546931_91032">Logical Interaction Point</a></td><td><a href="../../userdoc/stereotypes.html#_17_0_3_17530432_1320213131032_5397_2410"></a></td></tr>
+</table>

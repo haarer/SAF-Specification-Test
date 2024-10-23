@@ -1,0 +1,166 @@
+
+<p><strong>P4_PIEX</strong> Physical Internal Exchange Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../domains.html#physical-domain">Physical</a></td>
+      <td><a href="../aspects.html#interaction--collaboration-aspect">Interaction &amp; Collaboration</a></td>
+      <td><img src="/SAF-Specification-Test/version/main/assets/images/maturity-released.svg" height="20" width="20" /><a href="../maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1695648971402_992343_33498.svg" /></p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1697019824141_836856_34041.svg" /></p>
+
+<p><img src="../../diagrams/examples_md/exa_2024x_8710274_1717681657279_28457_15696.svg" /></p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1696580985906_141227_60131.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Physical Internal Exchange Viewpoint serves for the identification and definition of interfaces of elements of the physical system. also, the delegation of system element interfaces to the physical system boundary interfaces is covered.
+The Physical Internal Exchange Viewpoint</p>
+<ul>
+  <li>identifies system element interfaces on a physical level</li>
+  <li>states to which other physical elements the interfaces are connected to</li>
+  <li>assigns physical interface definitions to interfaces</li>
+  <li>defines the usage of interfaces, e.g., if only a subset of the interfaces is used</li>
+  <li>defines the delegation of physical system element interfaces to physical system boundary interfaces</li>
+</ul>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Physical Internal Exchange Viewpoint supports the “Design Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.5] and contributes to the artifacts “System Design Description” and “System Interface Definition”. It also supports the “Interface Management” method of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§3.2.4].</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>One or more IBDs featuring the SOI boundary, the parts representing physical elements of the SOI. At the SOI boundary, the interfaces of the SOI represented as proxy ports. At the parts, proxy ports representing the SOI parts interfaces. Binding Connectors for each identified SOI interface delegated to physical SOI elements interfaces.  connectors representing connections between interfaces of SOI parts. Item flows are defined for each planned exchange on the identified interfaces.
+Note: Please use more than one IBD focused on different areas of interest to keep the view comprehensive.
+Note: Ports may be nested to organize interfaces, but it is recommended to use only only one level.</p>
+
+<p>A Table representing the content or part of the ibd content.</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../stakeholders.html#_19_0_2_26f0132_1562303526473_933874_92402"> Hardware Developer </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_26f0132_1562303526473_525021_92401"> IV&amp;V Engineer </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1554653241806_566270_43560"> Mechanic Developer </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_26f0132_1562303526473_410133_92403"> Safety Expert </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1567337062655_160733_52757"> Security Expert </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_26f0132_1562303526473_98534_92400"> Software Developer </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../concerns.html#_2021x_2_8710274_1674576758600_423008_23078"> How do physical system elements interact to provide system functions? </a></li>
+
+
+<li><a href="../concerns.html#_2021x_2_8710274_1674576759247_884832_23642"> Which are the protocols for exchanging physical items on a specific interface? </a></li>
+
+
+<li><a href="../concerns.html#_2021x_2_8710274_1674576758561_575110_23056"> Which kind of physical items (energy, material, information, etc.) are used on an interface of a physical architecture element? </a></li>
+
+
+<li><a href="../concerns.html#_2021x_2_8710274_1698410513910_480926_28625"> Which physical items (energy, material, information, etc.) are exchanged within the system? </a></li>
+
+
+<li><a href="../concerns.html#_2021x_2_8710274_1674576758891_215548_23373"> Which standards, protocols, and format specifications apply to a physical interface? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1681827830138_917224_24184">realizingConnector</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1697110865880_731545_175274"></a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1695985266083_110612_25287">SAF_InterfaceLayerRelationship</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1697104711861_685153_72355"></a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1697104931657_586086_72562"></a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_9_0_62a020a_1105704884559_152470_7636">Connector</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1675099152786_518672_26637">SAF_PhysicalExchangeType</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_11_5EAPbeta_be00301_1147436061009_177713_1911">FlowProperty</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_17_0_3_17530432_1320213131032_5397_2410">ProxyPort</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_11_0_be00301_1147691436170_978680_223">ItemFlow</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1698303867220_276708_33791"></a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1697105754571_869720_72748"></a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_2_26f0132_1558090490396_87116_48464">SAF_PhysicalHardwareElement</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_2_26f0132_1558090585793_420384_48529">SAF_PhysicalElement</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_2_26f0132_1558090471537_935611_48414">SAF_PhysicalSoftwareElement</a></li>
+
+</ul>
+
+<h2 id="related-viewpoints">Related Viewpoints</h2>
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+
+<li><a href="../Physical Domain/Physical Structure Definition Viewpoint.html">Physical Structure Definition Viewpoint</a></li>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+
+<li><a href="../Functional Domain/System Process Viewpoint.html">System Process Viewpoint</a></li>
+
+</ul>

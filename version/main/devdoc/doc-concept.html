@@ -1,0 +1,109 @@
+<h1 id="documentation-concept">Documentation Concept</h1>
+
+<p>The documentation of SAF is needs to support different use cases of different personae.</p>
+
+<p><strong>We distinguish SAF Users and SAF Developers.</strong></p>
+
+<ul>
+  <li>the <a href="../userdoc/userdoc.md">User Documentation</a> is intended for SAF Users.</li>
+  <li>this Developer Documentation is intedend for SAF Developers. This includes anyone intending to extend or customize SAF, or just wants to know how SAF is developed or what are the building blocks of SAF.</li>
+</ul>
+
+<h2 id="use-cases">Use Cases</h2>
+<p>The following use cases have been identified for the SAF Documentation</p>
+
+<h3 id="saf-userssemp-author">SAF Users::SEMP Author</h3>
+
+<p>The author of a SEMP for a system in a certain project context wants to know:</p>
+
+<ul>
+  <li>which viewpoints are relevant for the systems engineering effort</li>
+  <li>how will we use the viewpoints and what is the benefit</li>
+  <li>which viewpoints will we need additionally</li>
+  <li>what do we potentially lose if we omit viewpoints</li>
+  <li>what is the recommended workflow through the viewpoints<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></li>
+</ul>
+
+<p>Those questions need an answer in order to plan the MBSE appoach. Every project is different, and the focus of modeling should be set accordingly. One needs to know where in the Lifecycle, and for which processes activities (refering to ISO15288) the viewpoints will provide a benefit.</p>
+
+<p>Most of the questions are supported by the following “steckbrief” characteristics of the viewpoint description.</p>
+
+<ul>
+  <li>Purpose
+(motivation and selling point of VP)</li>
+  <li>Applicability
+(where in the life cyle, which iso process, chapter in SE Handbook, usage in Reviews)</li>
+  <li>Stakeholders
+(Architecture Framework Stakeholders having a rationale founded concern)</li>
+  <li>Concerns
+(Rationale founded concerns )</li>
+  <li>Dependencies to other VP
+    <ul>
+      <li>hard dependencies (required vp is needed, otherwise this vp cant be filled)</li>
+      <li>soft dependencies (recommended vp supports this vp but could be omitted without breaking things)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The concerns of the SEMP Author are laid out in the <a href="../userdoc.md/stakeholders.md#saf-mbse-approch-planer">Stakeholder Documentation</a></p>
+
+<h3 id="saf-usersmodel-user">SAF Users::Model User</h3>
+
+<p>The user of a model (author or reader) wants to know:</p>
+
+<ul>
+  <li>how do i read a viewpoint</li>
+  <li>how do i create/fill a viewpoint</li>
+  <li>what is the order to fill viewpoints</li>
+  <li>what diagrams and model elements do i use</li>
+  <li>what is the minimum content of the viewpoint</li>
+  <li>what is the recommended workflow through the viewpoints<sup id="fnref:1:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></li>
+</ul>
+
+<p>This is supported by the following “steckbrief” characteristics of the viewpoint description.</p>
+
+<ul>
+  <li>Iconic Primary Example
+    <ul>
+      <li>showing key concepts of the VP, recognizing fullfilment of concerns</li>
+      <li>one for each presentation</li>
+    </ul>
+  </li>
+  <li>further Examples
+(showing variations of usage, together with explanations)</li>
+  <li>Presentations
+(alternate forms how the VP is presented, e.g. Diagram and Table)</li>
+  <li>Dependencies to other VP
+    <ul>
+      <li>hard dependencies (required vp is needed, otherwise this vp cant be filled)</li>
+      <li>soft dependencies (recommended vp supports this vp but could be omitted without breaking things)</li>
+    </ul>
+  </li>
+  <li>Used stereotypes
+(List of stereotypes to be used in the VP)</li>
+</ul>
+
+<p>The concerns of the SAF Model User are laid out in the <a href="../userdoc.md/stakeholders.md#saf-system-model-user">Stakeholder Documentation</a></p>
+
+<h2 id="saf-developersframework-developer">SAF Developers::Framework Developer</h2>
+
+<p>The framework developer wants to know:</p>
+
+<ul>
+  <li>how can i extend the framework by new viewpoints ?</li>
+  <li>what is needed for a viewpoint specification ?</li>
+  <li>how can i use the SAF Documentation as a base for my company MBSE framework ?
+Those questions arise within the development of SAF by the working group and also by third parties when they want to contribute to the framework.</li>
+</ul>
+
+<p>The development documentation aims to answer those questions. See next chapter.</p>
+
+<p>The concerns of the Framework Developer are laid out in the <a href="../userdoc.md/stakeholders.md#saf-developer">Stakeholder Documentation</a></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>The question about the recommended workflow cannot be answered by a single viewpoint description, this is an overarcing topic, which is currently not covered by the SAF documentation. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+  </ol>
+</div>

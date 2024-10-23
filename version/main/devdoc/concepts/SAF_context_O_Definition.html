@@ -1,0 +1,49 @@
+
+<p><img src="/diagrams/concept/exa_19_0_2_26f0132_1561750845871_402382_48509.svg" />
+Describes concepts used to describe operational contexts in the SAF Operational Domain and related concepts.</p>
+
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1576255436585_904360_55710">SCErepresentedBySSH</a></td><td>Specifies the fact that a System Context Element is represented by a SOI Stakeholder.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1576255326396_680115_55587">SOIactingForOPR</a></td><td>Specifies the fact that a SOI is acting for the benefit of an Operational Performer.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1567779491655_900665_58731">OSYtakingPlaceInOCT</a></td><td>Specifies the fact that an Operational Story occurs in a certain Operational Context. 
+Note: When parts of an Operational Story do occur in several contexts, they shall be duplicated.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1576255251560_709609_55539">SCEactingForOPR</a></td><td>Specifies the fact that a System Context Element is acting for the benefit of an Operational Performer.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1576255381074_947214_55662">SSHrepresentingOPR</a></td><td>Specifies the fact that a SOI Stakeholder is representing an Operational Performer.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_8710274_1581667736629_896691_49612">OPRcapableOFperformingOPS</a></td><td>Specifies the fact that an Operational Performer performs an Operational Activity. Traceability from Operational Activities to Operational Performers is derived via assignment of Operational Action to Operational Roles.
+
+Aliases:
+UAF::IsCapableToPerform</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562316546243_649906_43676">System Context Element</a></td><td>An abstract element representing a System Context Element. Base class for specific kinds of Context Elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_6d8019d_1598981150221_83799_30">OPRcomposedOF</a></td><td>Specifies the fact that an Operational Performer consists of one or more Operational Performers.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_164f041e_1564572299224_487951_54901">Operational Process</a></td><td>An Operational Process captures activity-based operational behavior including scenarios, activity actions, and operational exchange flows, e.g., including information, materials, natural resources, etc.
+
+Aliases:
+UAF::Operational Activity
+NAF::Logical Activity</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561763753175_522268_51960">Operational Context</a></td><td>An Operational Context is representing a separate Usage Scenario with a specific configuration of Operational Performers, these are interacting in the Scenario exhibiting a specific identified Operational Capability. One or more Operational Contexts meaningful for the Operational Domain are to be identified. 
+
+Aliases:
+UAF::HighLevelOperationalConcept</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_8710274_1581665911562_310714_48925">Operational Capability</a></td><td>A Operational Capability is a high-level description or specification of an organizational unit's ability to execute a specified course of action, to implement a business process or to provide a service. Operational Capabilities typically require people, processes, infrastructure, technology and supporting systems to be implemented.  A Operational Capability is an enduring element, its implementation may change over time. A necessary or desired change of a Operational Capability triggers the updated of involved systems or the integration new systems.
+
+Aliases:
+UAF::Capability
+NAF4::Capability</td></tr>
+<tr><td><a href="../concepts.html#_19_0_1_26f0132_1554446894573_10154_45796">System Of Interest</a></td><td>An abstract element representing a SOI. Base class for specific kinds of SOIs.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1582984690099_348707_50208">OPRactingInOSY</a></td><td>Specifies the fact that an Operational Performer acts in an Operational Story.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_6d8019d_1611592925440_283346_480">OPRexhibitingOCY</a></td><td>Specifies the fact that an Operational Performer exhibits an Operational Capability under specific environmental conditions.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1567694227019_837886_54521">Operational Context Role</a></td><td>An Operational Context Role represents a participant in an Operational context.
+It is interacting with other roles of the given Operational Context. Specific characteristics and features or, in case of persons or organizational units, knowledge and skills are assigned to a role necessary for the execution of the performed Operational Processes.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1558519956748_646834_44043">System of Interest Stakeholder</a></td><td>An individual, team, or organization (or classes thereof) with interests in, or concerns relative to, a system. It may be involved in any life cycle phase of the System. The Stakeholder represents a class or kind of Stakeholders. Stakeholders have a certain involvement: Stakeholder Involvement captures the influence of a project specific Stakeholder on the System. Stakeholder Involvement is characterized by
+* Contact Person
+* Kind of involvement
+* Life Cycle Phases involved
+* Relevance decision if and up to which degree Stakeholder is considered
+* Rationale for decision when Stakeholder is not considered</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562316412621_925297_43615">Operational Performer</a></td><td>An Operational Performer is an element of the Operational Context that is capable to perform Operational Process Activities contributing to a specific identified Operational Capability. An Operational Performer may be any kind of organization, person, or even a system playing a role in one or more Operational Contexts.
+
+Aliases:
+UAF::OperationalPerformer</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561750989144_963009_48675">Operational Story</a></td><td>The Operational Story represents one or more Operational Use Cases in the Usage Scenario identified by the Operational Context. The Operational Story is described as narrative story-telling.</td></tr>
+</table>

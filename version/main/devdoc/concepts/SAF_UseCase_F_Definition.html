@@ -1,0 +1,30 @@
+
+<p><img src="/diagrams/concept/exa_2024x_1_26f0132_1729288668211_540506_26963.svg" />
+distinguish between allocation of usage and allocation of definition 
+allocate function to Logical Element</p>
+
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1624611972707_746294_1003">Context Function</a></td><td>Specifies the fact that a fundamental action or task is expected to be carried out by an External Entity. 
+Note: The intention is to capture the expectations and to explicitly dissect the functionality. This must not be interpreted as an attempt for a behavior specification of an External Entity. Capturing this valuable information is the basis to reach agreement on the functionality at the System boundary by clarifying the expectations about what is performed by Context Elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1639735755383_425330_337">SUChasPreConditionSSE</a></td><td>Specifies the fact that a System Use Case has a state as Precondition.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303523973_719860_90882">System State</a></td><td>Describes a state (or mode) of something that can have distinct states.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1639735748424_245279_316">SUChasPostConditionSSE</a></td><td>Specifies the fact that a System Use Case has a state as Postcondition.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1624613247278_510884_1867">SUCsynthesizingCFN</a></td><td>Specifies the fact that a Context Function is used in a System Use Case, e.g., as a Trigger, Action, or Task.
+Note: This is a derived relationship.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_1_26f0132_1554446894995_335285_45800">System Use Case</a></td><td>The System Use Cases are a table of content of the services provided by the System of Interest to its System Actors. A System Use Case is only the abstract of the depicted System behavior and represents the purpose. While the main System of Interest interaction actors participating in this Use Case are identified, the behavior itself is specified by a Use Case Activity, 
+Note: The intended use (and also misuse in so called "black use cases") of the System of Interest is captured in free text; story telling at a coarse level of detail which is understandable to Customers (non engineering stakeholders in general).</td></tr>
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1624610613457_313794_115">System Process</a></td><td>Specifies the fact that a System Process captures system behavior as a specific sequence of actions or tasks, and system exchanges including information, materials, energy, etc.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_1_26f0132_1554447577832_897366_46461">SUCincludingSUC</a></td><td>Specifies the fact that a System Use Case includes other System Use Cases. The included use case is then no longer a full System Use Case, but a partial System Use Case.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303521707_858780_89137">SUCsynthesizingSFN</a></td><td>Specifies the fact that a System Function is used in a System Use Case, e.g., as a Trigger, Action, or Task. 
+Note: This is a derived relationship.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1624610806163_247313_817">SPSrefiningSUC</a></td><td>Specifies the fact that a System Use Case is refined by one System Process.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524161_394471_91009">System Function</a></td><td>Specifies the fundamental action or task that have to take place in the System in accepting and processing the
+inputs and in processing and generating the outputs.
+A System Function
+ * accepts input from the System boundary 
+ * exposes its output at the System boundary
+ * changes the System's State
+ * is dependent on System's State
+Note: A System Function does not need to expose observable output, when it changes the System's state in a way that is observable by other system functions. Furthermore, a System Function does not need to accept any input from the system boundary, when it is dependent on the System State, which in turn is changeable by other System Functions.</td></tr>
+</table>

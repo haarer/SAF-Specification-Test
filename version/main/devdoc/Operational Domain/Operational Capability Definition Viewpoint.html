@@ -1,0 +1,145 @@
+
+<p><strong>O2_OCYD</strong> Operational Capability Definition Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#operational-domain">Operational</a></td>
+      <td><a href="../../userdoc/aspects.html#taxonomy--structure-aspect">Taxonomy &amp; Structure</a></td>
+      <td><img src="/SAF-Specification-Test/version/main/assets/images/maturity-released.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_6d8019d_1589112275163_56055_429.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Operational Capability Definition Viewpoint defines a taxonomy of Capabilities from a Stakeholder’s perspective including composition, specialization, and dependency relationships between Operational Capabilities.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Operational Capability Definition Viewpoint supports the “Business or Mission Analysis Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§ 2.3.5.1] defining Capabilities at an operational level (e.g., business or mission profile, and operational scenarios). The Operational Capability Viewpoint contributes to the problem or opportunity statement.</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A block definition diagram (BDD) featuring Operational Capabilities, their composition, specialization, and dependency relationships.</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567280211417_154511_52831"> Acquirer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653236737_36605_43554"> Customer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_2021x_2_8710274_1674680055517_468796_22923"> Portfolio Manager </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674479775616_727128_23367"> What operational capabilities are defined? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576759229_963784_23628"> What operational capabilities are required for each phase and mode of operation? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_3_6d8019d_1600160576148_12235_366">SAF_OperationalCapabilityComposition</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_3_6d8019d_1600678873153_400736_372">SAF_OperationalCapabilityDependency</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_3_6d8019d_1600163146864_328836_471">SAF_OperationalCapabilityGeneralization</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_3_8710274_1581676828664_176399_54365">SAF_OperationalCapability</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+
+<li><a href="Operational Story Viewpoint.html">Operational Story Viewpoint</a></li>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_8710274_1581675970683_447349_52541.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_3_8710274_1581666201982_100862_49030">OCYcomposedOF</a></td><td>Specifies the fact that an Operational Capability consists of other Operational Capabilites.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_8710274_1581666429993_560174_49054">OCYdependingON</a></td><td>Specifies the fact that an Operational Capability depends on another Operational Capability.
+
+Aliases:
+UAF::CapabilityDependency</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_8710274_1581666154134_936493_49002">OCYspecializedBY</a></td><td>Specifies the fact that an Operational Capability is specialized by other Operational Capability. 
+
+Aliases:
+UAF::CapabilityGeneralization</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_8710274_1581665911562_310714_48925">Operational Capability</a></td><td>A Operational Capability is a high-level description or specification of an organizational unit's ability to execute a specified course of action, to implement a business process or to provide a service. Operational Capabilities typically require people, processes, infrastructure, technology and supporting systems to be implemented.  A Operational Capability is an enduring element, its implementation may change over time. A necessary or desired change of a Operational Capability triggers the updated of involved systems or the integration new systems.
+
+Aliases:
+UAF::Capability
+NAF4::Capability</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_8710274_1581675970707_225392_52562.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_8710274_1581666201982_100862_49030">OCYcomposedOF</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_3_6d8019d_1600160576148_12235_366">SAF_OperationalCapabilityComposition</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_8710274_1581666429993_560174_49054">OCYdependingON</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_3_6d8019d_1600678873153_400736_372">SAF_OperationalCapabilityDependency</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_8710274_1581666154134_936493_49002">OCYspecializedBY</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_3_6d8019d_1600163146864_328836_471">SAF_OperationalCapabilityGeneralization</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_8710274_1581665911562_310714_48925">Operational Capability</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_3_8710274_1581676828664_176399_54365">SAF_OperationalCapability</a></td></tr>
+</table>
