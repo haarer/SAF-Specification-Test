@@ -1,4 +1,4 @@
 
-const basePath = '/SAF-Specification';
-const repository_nwo = 'GfSE/SAF-Specification';
+const basePath = '/SAF-Specification-Test';
+const repository_nwo = 'haarer/SAF-Specification-Test';
 
