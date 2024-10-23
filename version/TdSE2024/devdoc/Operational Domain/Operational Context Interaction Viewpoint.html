@@ -1,0 +1,135 @@
+
+<p><strong>O4_OCXI</strong> Operational Context Interaction Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#operational-domain">Operational</a></td>
+      <td><a href="../../userdoc/aspects.html#interaction--collaboration-aspect">Interaction &amp; Collaboration</a></td>
+      <td><img src="/SAF-Specification-Test/version/TdSE2024/assets/images/maturity-released.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_2024x_1_26f0132_1722258766618_9302_15524.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Operational Context Interaction Viewpoint describes single threads of interaction between Operational Performers in an Operational Context on an operational domain level. 
+Note: The Operational Interaction Viewpoint may refine an Operational Story.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Operational Interaction Viewpoint supports the “Business or Mission Analysis Process” and the “Stakeholder Needs and Requirements Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§ 2.3.5.1 § 2.3.5.2] and contributes to the definition of operational scenarios and identification of interface boundaries and interfacing systems.</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A sequence diagram featuring the flow of control between Operational Performers of an Operational Context to achieve one outcome of an Operational Story. 
+Note: This diagram depicts the sending and receiving of messages between the interacting entities called lifelines where time is represented along the vertical axis. The lifelines representatives are part properties typed by Operational Performers.</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567280211417_154511_52831"> Acquirer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653236737_36605_43554"> Customer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576759199_457359_23612"> What possible threads of operational process activities have to be carried out to achieve the operational story main and alternative goals? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1629637155053_836431_340">SAF_OperationalContextRole</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704888195_415551_8289">Message</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704887901_869040_8246">Interaction</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704887938_842870_8254">Lifeline</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+
+<li><a href="Operational Context Definition Viewpoint.html">Operational Context Definition Viewpoint</a></li>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+
+<li><a href="Operational Process Viewpoint.html">Operational Process Viewpoint</a></li>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_2_26f0132_1561750230368_665114_48143.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1567694227019_837886_54521">Operational Context Role</a></td><td>An Operational Context Role represents a participant in an Operational context.
+It is interacting with other roles of the given Operational Context. Specific characteristics and features or, in case of persons or organizational units, knowledge and skills are assigned to a role necessary for the execution of the performed Operational Processes.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561753696413_162391_50607">Operational Chronological Message</a></td><td>Ordered sequential occurrence of exchanges between Operational Interaction Scenario Participants.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561752967418_869778_50310">Operational Interaction Scenario</a></td><td>Ordered sequence of exchanges of information, energy, or material between Operational Interaction Scenario Participants.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561753960035_59004_50670">Operational Scenario Participation</a></td><td>Specifies the fact that an Operational Context Role participates in an Operational Interaction Scenario.</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_2_26f0132_1561752566447_244748_49573.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1567694227019_837886_54521">Operational Context Role</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1629637155053_836431_340">SAF_OperationalContextRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561753696413_162391_50607">Operational Chronological Message</a></td><td><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704888195_415551_8289"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561752967418_869778_50310">Operational Interaction Scenario</a></td><td><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704887901_869040_8246"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561753960035_59004_50670">Operational Scenario Participation</a></td><td><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704887938_842870_8254"></a></td></tr>
+</table>

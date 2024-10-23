@@ -1,0 +1,219 @@
+
+<p><strong>F1_SUCD</strong> System Use Case Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#functional-domain">Functional</a></td>
+      <td><a href="../../userdoc/aspects.html#context--exchange-aspect">Context &amp; Exchange</a></td>
+      <td><img src="/SAF-Specification-Test/version/TdSE2024/assets/images/maturity-released.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_4_6d8019d_1626717318881_416688_987.svg" /></p>
+
+<p><img src="../../diagrams/examples_md/exa_18_2_3c00182_1453969195787_418001_22174.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The System Use Case Viewpoint provides an outside view on the system functionality from the perspective of the system users and contributes to the definition of system requirements and system usage. The intended system use may be captured as free-text use case description, as well as storytelling approach on a coarse level of detail. The main system exchange partners participating in the intended system use are identified. System use cases are related to a specific system context. System use cases are derived from operational scenarios elaborated during mission analysis.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The System Use Case Viewpoint supports the “Stakeholder Needs and Requirements Definition Process” and the “System Requirements Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.2, §2.3.5.3] and contributes to the definition of the system boundary and the identification of the expected system function.</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A use case diagram featuring model elements representing System Use Cases, System Context, and System Context Elements. The System Context shall be used as subject of the use case. The System Context Elements playing a Role in the Use Case shall be connected to the Use Case by associations.
+Note: System Use Case pre- and postconditions shall be represented either by callout or compartment notation.
+Relationship to operational stories can be related to the use case in order trace to mission analysis.</p>
+
+<p>A tabular format listing the System Use Cases, the System Use Case pre- and postconditions, the System Context, and the System Context Elements. Additionaly, the relationship to operational stories, if applicable.</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567280211417_154511_52831"> Acquirer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653236737_36605_43554"> Customer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_525021_92401"> IV&amp;V Engineer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653238260_245225_43556"> Operator </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567281039295_665940_53199"> Project Manager </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567280920665_435327_53193"> User </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_6d8019d_1674945898325_22078_35809"> For what purpose is the system developed or adapted? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758841_451500_23327"> How is the system being used or utilized and interacting with other external systems to satisfy user needs? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1697469571914_800497_36599"> What has the system to accomplish for its users? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_6d8019d_1674922633861_96675_24986"> Which are the system scenarios, i.e., course of action, for the system context in which the system solution will exist? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_6d8019d_1675459822996_961402_23325"> Which users does the system support?  </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1617440763282_465948_2187">SAF_LogicalContextElementActing</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1562313107961_803548_148677">SAF_LogicalEnvironment</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_1_26f0132_1547202431219_827789_42473">SAF_LogicalExternalSystem</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558076033373_157322_46890">SAF_LogicalContext</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558076117783_295122_47010">SAF_LogicalUser</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1630778868755_864755_338">SAF_SystemUseCaseEnabling</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1697273945667_128653_30263">PostConditionStates</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1697273920739_355569_30251">PreConditionStates</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1697273420898_578612_29983">subject</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_1_8710274_1552023067867_433281_43825">SAF_OperationalStory</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_1_8710274_1552023080917_369823_43852">SAF_SystemUseCase</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+
+<li><a href="System Context Definition Viewpoint.html">System Context Definition Viewpoint</a></li>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+
+<li><a href="Operational Story Viewpoint.html">Operational Story Viewpoint</a></li>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_1_26f0132_1554446725724_357933_45667.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_2_6d8019d_1555339282353_464909_46799">LCEactingInSUC</a></td><td>Specifies the fact that a Logical Context Element acts in one or more System Use Cases.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303989622_501728_139950">Logical Environment</a></td><td>A Logical Environment in the Logical Domain, outside the SOI scope, interacting with the SOI. E.g., air, dirt, sun, road.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1558075062569_130489_44874">Logical External System</a></td><td>A Logical External System in the Logical Domain, outside the SOI scope, interacting with the SOI. E.g., power grid, mobile network, fresh water system (in a house).</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1558075086129_173532_44926">Logical System Context</a></td><td>Specifies the fact that a System Context for a System of Interest is defined on Logical Level.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1558534130432_293473_45375">Logical User</a></td><td>The Logical User is the representation for a human in the Logical Domain, outside the SOI scope, interacting with the SOI.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_164f041e_1564571019748_834303_54723">SUCenablingOSY</a></td><td>Specifies the fact that a System Use Case enables the realization of an Operational Story.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1639735748424_245279_316">SUChasPostConditionSSE</a></td><td>Specifies the fact that a System Use Case has a state as Postcondition.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1639735755383_425330_337">SUChasPreConditionSSE</a></td><td>Specifies the fact that a System Use Case has a state as Precondition.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_4_6d8019d_1621167443409_435880_621">SUCtakingPlaceInLSC</a></td><td>Specifies the fact that a System Use Case takes place in a Logical System Context.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561750989144_963009_48675">Operational Story</a></td><td>The Operational Story represents one or more Operational Use Cases in the Usage Scenario identified by the Operational Context. The Operational Story is described as narrative story-telling.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_1_26f0132_1554446894995_335285_45800">System Use Case</a></td><td>The System Use Cases are a table of content of the services provided by the System of Interest to its System Actors. A System Use Case is only the abstract of the depicted System behavior and represents the purpose. While the main System of Interest interaction actors participating in this Use Case are identified, the behavior itself is specified by a Use Case Activity, 
+Note: The intended use (and also misuse in so called "black use cases") of the System of Interest is captured in free text; story telling at a coarse level of detail which is understandable to Customers (non engineering stakeholders in general).</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_26f0132_1599133081281_406229_4525.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_6d8019d_1555339282353_464909_46799">LCEactingInSUC</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1617440763282_465948_2187">SAF_LogicalContextElementActing</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303989622_501728_139950">Logical Environment</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1562313107961_803548_148677">SAF_LogicalEnvironment</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1558075062569_130489_44874">Logical External System</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_1_26f0132_1547202431219_827789_42473">SAF_LogicalExternalSystem</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1558075086129_173532_44926">Logical System Context</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558076033373_157322_46890">SAF_LogicalContext</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1558534130432_293473_45375">Logical User</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558076117783_295122_47010">SAF_LogicalUser</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_164f041e_1564571019748_834303_54723">SUCenablingOSY</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1630778868755_864755_338">SAF_SystemUseCaseEnabling</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1639735748424_245279_316">SUChasPostConditionSSE</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1697273945667_128653_30263"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1639735755383_425330_337">SUChasPreConditionSSE</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1697273920739_355569_30251"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_4_6d8019d_1621167443409_435880_621">SUCtakingPlaceInLSC</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1697273420898_578612_29983"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561750989144_963009_48675">Operational Story</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_1_8710274_1552023067867_433281_43825">SAF_OperationalStory</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_1_26f0132_1554446894995_335285_45800">System Use Case</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_1_8710274_1552023080917_369823_43852">SAF_SystemUseCase</a></td></tr>
+</table>

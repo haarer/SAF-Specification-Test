@@ -1,0 +1,166 @@
+
+<p><strong>F4_SCXI</strong> System Context Interaction Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#functional-domain">Functional</a></td>
+      <td><a href="../../userdoc/aspects.html#interaction--collaboration-aspect">Interaction &amp; Collaboration</a></td>
+      <td><img src="/SAF-Specification-Test/version/TdSE2024/assets/images/maturity-released.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_6d8019d_1588607783346_352662_350.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The System Context Interaction Viewpoint describes the System external behavior based on the exchange between Logical SOI and Logical Context Elements Usage in a given System Context. It depicts the sequence of interactions between the Logical SOI, the Context Elements and the exchanged Domain Item Kinds needed to accomplish a given System Process. 
+Note: The System Context Interaction Viewpoint may refine a System Use Case.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The System Context Interaction Viewpoint supports the “prepare for requirement definition” activity part of the “System Requirements Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2015 [§ 4.3] and contributes to the identification of expected interactions with systems external to the SOI.</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A sequence diagram featuring the flow of control between SOI and Context Elements Roles of a System Context to achieve one outcome of a System Use Case. 
+Note: This diagram depicts the sending and receiving of messages between the interacting entities called lifelines, where time is represented along the vertical axis. The lifelines representatives are part properties typed by a System Context Elements.</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567280211417_154511_52831"> Acquirer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653236737_36605_43554"> Customer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_933874_92402"> Hardware Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_525021_92401"> IV&amp;V Engineer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653238260_245225_43556"> Operator </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_410133_92403"> Safety Expert </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567337062655_160733_52757"> Security Expert </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_98534_92400"> Software Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567280920665_435327_53193"> User </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758841_451500_23327"> How is the system being used or utilized and interacting with other external systems to satisfy user needs? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576759095_626726_23511"> What is the necessary response time for an interface or a service? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1697718624828_512543_29114"> What is the sequence of interactions among the system and context elements on concpetual level? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1630175259198_859971_358">SAF_LogicalContextRole</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704888195_415551_8289">Message</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704887901_869040_8246">Interaction</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704887938_842870_8254">Lifeline</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+
+<li><a href="System Context Definition Viewpoint.html">System Context Definition Viewpoint</a></li>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+
+<li><a href="System Process Viewpoint.html">System Process Viewpoint</a></li>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_4_26f0132_1626790419043_211358_450.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1567171243005_813677_60746">Logical Context Element Role</a></td><td>Specifies the fact that a Logical Context Element exists in a given Logical System Context.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1567171329121_821656_60902">Logical SOI Role</a></td><td>Specifies the fact that a Logical Context SOI exists in a given Logical System Context.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1582318082493_106012_58951">System Context Chronological Message</a></td><td>Ordered sequential occurrence of exchanges between System Context Interaction Scenario Participants.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1582317772054_442780_58842">System Context Interaction Scenario</a></td><td>Ordered sequence of exchanges of information, energy, or material between System Context Interaction Scenario Participants.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1582317965050_858700_58885">System Context Scenario Participation</a></td><td>Specifies the fact that a System Context Role participates in a System Context Interaction Scenario.</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_4_26f0132_1626790419106_98009_472.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1567171243005_813677_60746">Logical Context Element Role</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1630175259198_859971_358">SAF_LogicalContextRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1567171329121_821656_60902">Logical SOI Role</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1630175259198_859971_358">SAF_LogicalContextRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1582318082493_106012_58951">System Context Chronological Message</a></td><td><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704888195_415551_8289"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1582317772054_442780_58842">System Context Interaction Scenario</a></td><td><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704887901_869040_8246"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_26f0132_1582317965050_858700_58885">System Context Scenario Participation</a></td><td><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704887938_842870_8254"></a></td></tr>
+</table>

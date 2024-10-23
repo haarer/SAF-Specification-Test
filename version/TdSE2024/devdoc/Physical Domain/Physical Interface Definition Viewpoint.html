@@ -1,0 +1,195 @@
+
+<p><strong>P5_PIFD</strong> Physical Interface Definition Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#physical-domain">Physical</a></td>
+      <td><a href="../../userdoc/aspects.html#interface-aspect">Interface</a></td>
+      <td><img src="/SAF-Specification-Test/version/TdSE2024/assets/images/maturity-released.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1696593549704_655410_91025.svg" /></p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1695208986903_203958_26642.svg" /></p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1696599882339_266143_98316.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Physical Interface Definition Viewpoint captures definitions for physical interfaces. It allows to adopt long-lived standards and to harmonize physical interface definitions to improve interchangeability, interoperability, and portability.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Physical Interface Definition Viewpoint supports the “create system design” activity included in the “Design Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.5] and contributes to the artifact “System Interface Definition”.</p>
+
+<p>Furthermore, the viewpoint supports the “Interface Management” approach of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§3.2.4].</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A block definition diagram (BDD) featuring Physical Interface blocks with ports, and flow properties. Compatibility between Physical Interface blocks is expressed by associations and association blocks. Physical Interface blocks may be specialisations of others (use of generalisation).
+Note: When ports are used these shall be proxy ports and be typed by interface blocks.</p>
+
+<p>A tabular format listing Physical Interface blocks, their ports, and flow properties.</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_933874_92402"> Hardware Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653241806_566270_43560"> Mechanic Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_410133_92403"> Safety Expert </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567337062655_160733_52757"> Security Expert </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_98534_92400"> Software Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1698695280731_979013_48719"> Which are the interface definitions for the physical architecture? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576759093_319282_23509"> Which are the protocols used for exchanging information? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1697542838788_945785_24608"> Which kind of physical items (energy, material, information, etc.) are used in the physical architecture of the system? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1697110865880_731545_175274"></a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695985266083_110612_25287">SAF_InterfaceLayerRelationship</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1697104931657_586086_72562"></a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1675099152786_518672_26637">SAF_PhysicalExchangeType</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695210280486_572526_27622">SAF_PhysicalInterfaceDefinition</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_11_5EAPbeta_be00301_1147436061009_177713_1911">FlowProperty</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_17_0_3_17530432_1320213131032_5397_2410">ProxyPort</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1697105754571_869720_72748"></a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1697106526057_735942_72934"></a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1695205331752_593435_24411.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1697110372756_168059_150785">PCPisPartOfPIPD</a></td><td>specifies that a physical interaction point can be a part of a physical interaction point definition. This fosters reuse and allows structuring of definitions.</td></tr>
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1695984535441_481088_24822">PCPOverPCP</a></td><td>Specifies the fact that a physical interaction point communicates / transfers / flows / over an other physical interaction point. Used to define layered physical interfaces, and show layer relationships between interfaces.</td></tr>
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1697109899298_943155_150586">PCPPOverPCPP</a></td><td>Specifies the fact that a physical interaction point property communicates / transfers / flows / over an other physical interaction point property. Used to define layered physical interfaces, and show layer relationships between interface details.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_605407_91026">PEKtypingPIPP</a></td><td>Specifies the fact that a Physical Exchange Kind defines the type of a Physical Interaction Point Property.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_482464_91025">Physical Exchange Kind</a></td><td>Specification for any kind of physical item (energy, material, information, etc.) to be exchanged on Physical Level. This is the realization of the specification made by System Domain Kinds.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_956519_91030">Physical Interaction Point Definition</a></td><td>Specifies the exchange capabilities of an interaction point on Physical Level.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_114179_91028">Physical Interaction Point Property</a></td><td>Specifies a detail of an interaction point on Physical Level.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_842935_91034">Physical Interaction Point</a></td><td>Specifies the existence of an interaction point on Physical Level.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_477765_91035">PIPDdefiningDetailOfPIP</a></td><td>Specifies the fact that a Physical Interaction Point Definition defines the exchange capabilities of a Physical Interaction  Point.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_401348_91038">PIPPspecifyingDetailOfPIPD</a></td><td>Specifies the fact that a Physical Interaction Point Property is a detail of a Physical Interaction Point Definition.</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1695205331514_264284_24365.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1697110372756_168059_150785">PCPisPartOfPIPD</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1697110865880_731545_175274"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1695984535441_481088_24822">PCPOverPCP</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695985266083_110612_25287">SAF_InterfaceLayerRelationship</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1697109899298_943155_150586">PCPPOverPCPP</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695985266083_110612_25287">SAF_InterfaceLayerRelationship</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_605407_91026">PEKtypingPIPP</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1697104931657_586086_72562"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_482464_91025">Physical Exchange Kind</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1675099152786_518672_26637">SAF_PhysicalExchangeType</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_956519_91030">Physical Interaction Point Definition</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695210280486_572526_27622">SAF_PhysicalInterfaceDefinition</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_114179_91028">Physical Interaction Point Property</a></td><td><a href="../../userdoc/stereotypes.html#_11_5EAPbeta_be00301_1147436061009_177713_1911"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_842935_91034">Physical Interaction Point</a></td><td><a href="../../userdoc/stereotypes.html#_17_0_3_17530432_1320213131032_5397_2410"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_477765_91035">PIPDdefiningDetailOfPIP</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1697105754571_869720_72748"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_401348_91038">PIPPspecifyingDetailOfPIPD</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1697106526057_735942_72934"></a></td></tr>
+</table>

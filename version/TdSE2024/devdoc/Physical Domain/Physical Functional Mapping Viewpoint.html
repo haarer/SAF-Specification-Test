@@ -1,0 +1,208 @@
+
+<p><strong>P8_PFUM</strong> Physical Functional Mapping Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#physical-domain">Physical</a></td>
+      <td><a href="../../userdoc/aspects.html#traceability--mapping-aspect">Traceability &amp; Mapping</a></td>
+      <td><img src="/SAF-Specification-Test/version/TdSE2024/assets/images/maturity-released.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1698332267659_566525_76783.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Physical Functional Mapping Viewpoint supports the analysis of the assigment of system functions and system partial functions to physical system elements. The result shall be computed from the assigment of functions to logial system elements and the assignment of logical system elements to physical system elements</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Physical Functional Mapping Viewpoint supports the “Design Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.5] and contributes to the artifact “Traceability Mapping”.</p>
+
+<p>Furthermore, the Physical Functional Mapping Viewpoint supports the “Allocation and Partitioning of Functional Entities to Physical Entities” activities.</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A FBS_to_PBS mapping matrix featuring</p>
+<ul>
+  <li>Functional Breakdown Structure (FBS)</li>
+  <li>Physical Breakdown Structure (PBS)</li>
+  <li>mapping (it is a derived relationship) from system functions and system partial functions to physical SOI elements</li>
+</ul>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_933874_92402"> Hardware Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_525021_92401"> IV&amp;V Engineer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653241806_566270_43560"> Mechanic Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_98534_92400"> Software Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758941_524652_23399"> What is the mapping of functions to the physical SOI physical architecture? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576759216_889664_23621">  </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758889_521511_23366">  </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1698399553646_852568_33150"> Which system funcions need to be tested in IV&amp;V activities? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_1_8710274_1547464071851_635988_42197">SAF_PhysicalSystem</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_1_26f0132_1548408079060_514464_44018">SAF_SystemFunction</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695809841236_544249_27160">SAF_PhysicalInternalRole</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558090490396_87116_48464">SAF_PhysicalHardwareElement</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558090585793_420384_48529">SAF_PhysicalElement</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1698328999912_130185_48821">function</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558090471537_935611_48414">SAF_PhysicalSoftwareElement</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+
+<li><a href="Logical Structure Definition Viewpoint.html">Logical Structure Definition Viewpoint</a></li>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1675987942869_684347_33124.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1558075337119_355128_45325">Physical SOI</a></td><td>Represents the Physical SOI on Physical Level.</td></tr>
+<tr><td><a href="../concepts.html#_2021x_2_6d8019d_1677952512216_184791_24859">SPFNallocatedToAPE</a></td><td>Specifies the fact that a System Partial Function is assigned to an Abstract Physical Element.
+Note: This fact may be derived from the Usage of Function of a System Partial Function allocated to a Physical SOI Element Role</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524161_394471_91009">System Function</a></td><td>Specifies the fundamental action or task that have to take place in the System in accepting and processing the
+inputs and in processing and generating the outputs.
+A System Function
+ * accepts input from the System boundary 
+ * exposes its output at the System boundary
+ * changes the System's State
+ * is dependent on System's State
+Note: A System Function does not need to expose observable output, when it changes the System's state in a way that is observable by other system functions. Furthermore, a System Function does not need to accept any input from the system boundary, when it is dependent on the System State, which in turn is changeable by other System Functions.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_174876_91086">Hardware Element Role</a></td><td>Specifies the fact that a hardware structure comprises hardware elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_845534_91075">Hardware Element</a></td><td>Pure Hardware Elements. Similarity with the V-Model "hardware unit".</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_635820_91087">Physical Element Role</a></td><td>Specifies the fact that a physical structure comprises physical elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_824595_91079">Physical Element</a></td><td>A composition of Hardware and Software Elements. Similarity with the V-Model segments and system. See [VXT].</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_672620_91085">Physical Hardware Role</a></td><td>Specifies the fact that a physical structure comprises hardware elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_61581_91084">Physical Software Role</a></td><td>Specifies the fact that a physical structure comprises software elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524161_503942_91010">SFNallocatedToAPE</a></td><td>Specifies the fact that a relationship is derived from the assignment of Functions to Logical Elements and the assignment of Logical Elements to Physical Elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_594816_91083">Software Element Role</a></td><td>Specifies the fact that a software structure comprises software elements.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_251302_91078">Software Element</a></td><td>Pure Software Elements. Similarity with the V-Model "software unit".</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1675987942875_46476_33140.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1558075337119_355128_45325">Physical SOI</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_1_8710274_1547464071851_635988_42197">SAF_PhysicalSystem</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2021x_2_6d8019d_1677952512216_184791_24859">SPFNallocatedToAPE</a></td><td><a href="../../userdoc/stereotypes.html#"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524161_394471_91009">System Function</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_1_26f0132_1548408079060_514464_44018">SAF_SystemFunction</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_174876_91086">Hardware Element Role</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695809841236_544249_27160">SAF_PhysicalInternalRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_845534_91075">Hardware Element</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558090490396_87116_48464">SAF_PhysicalHardwareElement</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_635820_91087">Physical Element Role</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695809841236_544249_27160">SAF_PhysicalInternalRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_824595_91079">Physical Element</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558090585793_420384_48529">SAF_PhysicalElement</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_672620_91085">Physical Hardware Role</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695809841236_544249_27160">SAF_PhysicalInternalRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_61581_91084">Physical Software Role</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695809841236_544249_27160">SAF_PhysicalInternalRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524161_503942_91010">SFNallocatedToAPE</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1698328999912_130185_48821"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_594816_91083">Software Element Role</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1695809841236_544249_27160">SAF_PhysicalInternalRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_251302_91078">Software Element</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_2_26f0132_1558090471537_935611_48414">SAF_PhysicalSoftwareElement</a></td></tr>
+</table>

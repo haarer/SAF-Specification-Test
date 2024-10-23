@@ -1,0 +1,109 @@
+
+<p><strong>P8_PLIM</strong> Physical Logical Item Mapping Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#physical-domain">Physical</a></td>
+      <td><a href="../../userdoc/aspects.html#traceability--mapping-aspect">Traceability &amp; Mapping</a></td>
+      <td><img src="/SAF-Specification-Test/version/TdSE2024/assets/images/maturity-proposed.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#proposed">proposed</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Physical Logical Item Mapping Viewpoint specifies the assignment of the System Domain Kinds to Physical Exchange Kinds.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Physical Logical Item Mapping Viewpoint supports [tbd].</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A  Physical To Logical Assigment Matrix featuring</p>
+<ul>
+  <li>System Domain Kinds</li>
+  <li>Physical Exchange Kinds</li>
+  <li>Allocation relationship between them</li>
+</ul>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_3_26f0132_1614938958203_459716_5653">SAF_DomainKind</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_11_5EAPbeta_be00301_1147866646230_488749_1541">Allocate</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1675099152786_518672_26637">SAF_PhysicalExchangeType</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1698415722728_754169_60065.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561753378434_784618_50481">System Domain Kind</a></td><td>Specification for any kind of conceptual item (energy, material, information, etc.) to be exchanged on Functional or Logical Level. The System Domain Kind is agnostic to any realization on Physical Level.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303523801_894791_90759">PEKrealizingSDK</a></td><td>Specifies the fact that a System Domain Kind is realized by Physical Exchange Kinds.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_482464_91025">Physical Exchange Kind</a></td><td>Specification for any kind of physical item (energy, material, information, etc.) to be exchanged on Physical Level. This is the realization of the specification made by System Domain Kinds.</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1698415722718_106837_60049.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1561753378434_784618_50481">System Domain Kind</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_3_26f0132_1614938958203_459716_5653">SAF_DomainKind</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303523801_894791_90759">PEKrealizingSDK</a></td><td><a href="../../userdoc/stereotypes.html#_11_5EAPbeta_be00301_1147866646230_488749_1541"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524176_482464_91025">Physical Exchange Kind</a></td><td><a href="../../userdoc/stereotypes.html#_2021x_2_8710274_1675099152786_518672_26637">SAF_PhysicalExchangeType</a></td></tr>
+</table>

@@ -1,0 +1,256 @@
+
+<p><strong>F3_SPRO</strong> System Process Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../../userdoc/domains.html#functional-domain">Functional</a></td>
+      <td><a href="../../userdoc/aspects.html#process--behavior-aspect">Process &amp; Behavior</a></td>
+      <td><img src="/SAF-Specification-Test/version/TdSE2024/assets/images/maturity-released.svg" height="20" width="20" /><a href="../../userdoc/maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_6d8019d_1587810786253_715619_53557.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The System Process Viewpoint provides the functional representation of the system using a black-box approach</p>
+<ul>
+  <li>the representation of the SOI and all Context Elements</li>
+  <li>the System Functions the SOI shall be able to perform</li>
+  <li>the Context Functions the Context Elements are expected to perform</li>
+  <li>the exchange between SOI System Functions and Context Functions of Context Elements</li>
+  <li>the functional flows crossing the boundary between SOI and Context Elements</li>
+</ul>
+
+<h2 id="applicability">Applicability</h2>
+<p>The System Process Viewpoint supports the “System Requirements Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2015 [§4.3] and contributes to the System Function, and the System Interface definition.</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>An activity diagram featuring the ordered execution of System Process Actions. The activity diagram swim lanes are typed with Context Element usage and SOI usage from the same System Context. 
+Note: In order to improve the clarity of presentation it may be appropriate to use several activity diagrams for one System Process.</p>
+
+<p>A tabular format listing all identified System Functions, the System Processes in which they appear, and the Comtext Exchange with the Context Functions.</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567280211417_154511_52831"> Acquirer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653236737_36605_43554"> Customer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_933874_92402"> Hardware Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_525021_92401"> IV&amp;V Engineer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1554653238260_245225_43556"> Operator </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567281039295_665940_53199"> Project Manager </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_410133_92403"> Safety Expert </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567337062655_160733_52757"> Security Expert </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_26f0132_1562303526473_98534_92400"> Software Developer </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567282723132_468249_52793"> Supplier </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+
+<li><a href="../../userdoc/stakeholders.html#_19_0_2_ebf0350_1567280920665_435327_53193"> User </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758952_658537_23403"> How does a system function interact with its environment? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758710_799233_23181"> How is the system interacting with the identified external entities? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758674_250912_23143"> What are necessary inputs for operating the system expected to be provided by other external entitys? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758630_745758_23103"> What are the scenarios a system function is utilized in? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758960_189958_23415"> What is the functional scope of the system? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758798_462644_23290"> What services are expected from external entities? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758808_527146_23298"> Which are the conceptual interfaces of the system? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758924_539039_23390"> Which functions are out of scope of the system? </a></li>
+
+
+<li><a href="../../userdoc/concerns.html#_2021x_2_8710274_1674576758649_392764_23120"> Which functions will the system provide? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704893403_369088_8547">ObjectFlow</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704884528_587873_7620">Parameter</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704893364_624946_8539">ControlFlow</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_11_5EAPbeta_be00301_1147866646230_488749_1541">Allocate</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1630175259198_859971_358">SAF_LogicalContextRole</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2024x_8710274_1716829255386_751832_18291"></a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1624825970650_773062_2087">SAF_ContextFunction</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_2024x_8710274_1716829149831_366341_18205"></a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_1_26f0132_1548408079060_514464_44018">SAF_SystemFunction</a></li>
+
+
+<li><a href="../../userdoc/stereotypes.html#_19_0_4_26f0132_1624963294145_897849_4228">SAF_SystemProcess</a></li>
+
+</ul>
+
+<h2 id="input-from-other-viewpoints">Input from other Viewpoints</h2>
+
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+
+<li><a href="Operational Context Definition Viewpoint.html">Operational Context Definition Viewpoint</a></li>
+
+</ul>
+
+<h2 id="concept-view-of-viewpoint">Concept View of Viewpoint</h2>
+<p>The Diagram shows the concepts exposed by the viewpoint, and related concepts if necessary.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_2_8710274_1567167552899_386208_54672.svg" /></p>
+
+<h2 id="concepts-exposed-in-viewpoint">Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Documentation</th></tr>
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1567168520242_378357_56193">General Functional Exchange</a></td><td>Specifies the fact that an General Functional Exchange between General Function Parameters is taking place.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524161_902110_90999">General Function Usage Exchange Point</a></td><td>A parameter of a System or Context Function.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_3_6d8019d_1609520174192_971623_551">GFNcontrolledAFTER</a></td><td>Specifies a sequential execution of Functions.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1624612392905_372789_1074">LCEperformingCFN</a></td><td>Specifies the fact that a Context Function is expected to be carried out by the Logical Context Element in this System Context.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1624615117147_549388_2197">LETperformingSFN</a></td><td>Specifies the fact that a System Function is expected to be carried out by the SOI in this System Context.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1567171243005_813677_60746">Logical Context Element Role</a></td><td>Specifies the fact that a Logical Context Element exists in a given Logical System Context.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1567171329121_821656_60902">Logical SOI Role</a></td><td>Specifies the fact that a Logical Context SOI exists in a given Logical System Context.</td></tr>
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1675981347806_599070_29437">Context Function IN System Process</a></td><td>Specifies the fact that a Context Function is used in a System Process.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1624611972707_746294_1003">Context Function</a></td><td>Specifies the fact that a fundamental action or task is expected to be carried out by an External Entity. 
+Note: The intention is to capture the expectations and to explicitly dissect the functionality. This must not be interpreted as an attempt for a behavior specification of an External Entity. Capturing this valuable information is the basis to reach agreement on the functionality at the System boundary by clarifying the expectations about what is performed by Context Elements.</td></tr>
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1675981331374_205908_29130">System Function IN System Process</a></td><td>Specifies the fact that a System Function is used in a System Process.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524161_394471_91009">System Function</a></td><td>Specifies the fundamental action or task that have to take place in the System in accepting and processing the
+inputs and in processing and generating the outputs.
+A System Function
+ * accepts input from the System boundary 
+ * exposes its output at the System boundary
+ * changes the System's State
+ * is dependent on System's State
+Note: A System Function does not need to expose observable output, when it changes the System's state in a way that is observable by other system functions. Furthermore, a System Function does not need to accept any input from the system boundary, when it is dependent on the System State, which in turn is changeable by other System Functions.</td></tr>
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1624610613457_313794_115">System Process</a></td><td>Specifies the fact that a System Process captures system behavior as a specific sequence of actions or tasks, and system exchanges including information, materials, energy, etc.</td></tr>
+</table>
+
+<h2 id="implementation-view-of-viewpoint">Implementation View of Viewpoint</h2>
+<p>The Diagram shows the implementation of exposed concepts.</p>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_2_8710274_1567167552919_30834_54693.svg" /></p>
+
+<h2 id="realization-of-concepts-exposed-in-viewpoint">Realization of Concepts exposed in Viewpoint</h2>
+<table>
+<tr><th>Concept</th><th>Realization</th></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1567168520242_378357_56193">General Functional Exchange</a></td><td><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704893403_369088_8547"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524161_902110_90999">General Function Usage Exchange Point</a></td><td><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704884528_587873_7620"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_3_6d8019d_1609520174192_971623_551">GFNcontrolledAFTER</a></td><td><a href="../../userdoc/stereotypes.html#_9_0_62a020a_1105704893364_624946_8539"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1624612392905_372789_1074">LCEperformingCFN</a></td><td><a href="../../userdoc/stereotypes.html#_11_5EAPbeta_be00301_1147866646230_488749_1541"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1624615117147_549388_2197">LETperformingSFN</a></td><td><a href="../../userdoc/stereotypes.html#_11_5EAPbeta_be00301_1147866646230_488749_1541"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1567171243005_813677_60746">Logical Context Element Role</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1630175259198_859971_358">SAF_LogicalContextRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_8710274_1567171329121_821656_60902">Logical SOI Role</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1630175259198_859971_358">SAF_LogicalContextRole</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1675981347806_599070_29437">Context Function IN System Process</a></td><td><a href="../../userdoc/stereotypes.html#_2024x_8710274_1716829255386_751832_18291"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1624611972707_746294_1003">Context Function</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_4_6d8019d_1624825970650_773062_2087">SAF_ContextFunction</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_2021x_2_8710274_1675981331374_205908_29130">System Function IN System Process</a></td><td><a href="../../userdoc/stereotypes.html#_2024x_8710274_1716829149831_366341_18205"></a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_2_26f0132_1562303524161_394471_91009">System Function</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_1_26f0132_1548408079060_514464_44018">SAF_SystemFunction</a></td></tr>
+
+
+
+<tr><td><a href="../concepts.html#_19_0_4_26f0132_1624610613457_313794_115">System Process</a></td><td><a href="../../userdoc/stereotypes.html#_19_0_4_26f0132_1624963294145_897849_4228">SAF_SystemProcess</a></td></tr>
+</table>

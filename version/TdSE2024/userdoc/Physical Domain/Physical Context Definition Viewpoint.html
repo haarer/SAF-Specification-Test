@@ -1,0 +1,115 @@
+
+<p><strong>P1_PCXD</strong> Physical Context Definition Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../domains.html#physical-domain">Physical</a></td>
+      <td><a href="../aspects.html#context--exchange-aspect">Context &amp; Exchange</a></td>
+      <td><img src="/SAF-Specification-Test/version/TdSE2024/assets/images/maturity-released.svg" height="20" width="20" /><a href="../maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_2021x_2_8710274_1695638583390_640589_60728.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Physical Context Definition Viewpoint identifies the various contexts the SOI is used in, along with the associated external entities sharing a physical interface with the system. For each context, the applicable environmental conditions shall be defined. The physical context helps identify the interface requirements needed to integrate a system into its environment in a given context.</p>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Physical Context Definition Viewpoint supports the “Design Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.5] and contributes to the artifacts “System Design Description” and “System Interface Definition”.</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>A block definition diagram (BDD) depicting the elements available in a specific context. At least one BDD is used per identified context featuring</p>
+<ul>
+  <li>one block representing the Physical System, i.e., the system of interest</li>
+  <li>one block representing the specific Physical System Context</li>
+  <li>several blocks representing Physical Context Elements such as Physical User, Physical External System, and Physical Environment that are present in the Physical System Context</li>
+  <li>composition relationships attaching the Physical Context Elements and the Physical System to the Physical System Context block</li>
+</ul>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1567280211417_154511_52831"> Acquirer </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1554653236737_36605_43554"> Customer </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_26f0132_1562303526473_525021_92401"> IV&amp;V Engineer </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_26f0132_1562303526473_410133_92403"> Safety Expert </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1567337062655_160733_52757"> Security Expert </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1567282723132_468249_52793"> Supplier </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../concerns.html#_2021x_2_8710274_1674576758710_759449_23186"> Which are the external physical entities the system interacts with in the given context? </a></li>
+
+
+<li><a href="../concerns.html#_2021x_2_8710274_1674576758891_776196_23368"> Which are the given contexts the system is embedded and utilized in? </a></li>
+
+
+<li><a href="../concerns.html#_2021x_2_8710274_1674576759091_673143_23507"> Which interface partners does the system have? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1697706707436_503229_24914">SAF_PhysicalContextRole</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_2_26f0132_1558076176279_434857_47106">SAF_PhysicalEnvironment</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_2_26f0132_1560372077241_905943_48390">SAF_PhysicalExternalSystem</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_1_8710274_1547464071851_635988_42197">SAF_PhysicalSystem</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_2_164f041e_1564558860534_409677_52063">SAF_PhysicalContext</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_1_26f0132_1547202486398_568937_42535">SAF_PhysicalUser</a></li>
+
+</ul>
+
+<h2 id="related-viewpoints">Related Viewpoints</h2>
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+</ul>

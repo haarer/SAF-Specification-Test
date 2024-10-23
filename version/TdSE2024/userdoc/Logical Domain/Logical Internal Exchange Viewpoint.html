@@ -1,0 +1,142 @@
+
+<p><strong>L4_LIEX</strong> Logical Internal Exchange Viewpoint</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Domain</strong></th>
+      <th><strong>Aspect</strong></th>
+      <th><strong>Maturity</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../domains.html#logical-domain">Logical</a></td>
+      <td><a href="../aspects.html#interaction--collaboration-aspect">Interaction &amp; Collaboration</a></td>
+      <td><img src="/SAF-Specification-Test/version/TdSE2024/assets/images/maturity-released.svg" height="20" width="20" /><a href="../maturity.html#released">released</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p><img src="../../diagrams/examples_md/exa_19_0_3_6d8019d_1587903359409_504540_53267.svg" /></p>
+
+<h2 id="purpose">Purpose</h2>
+<p>The Logical Internal Exchange Viewpoint serves for the identification and definition of interfaces of elements of the logical system. also, the delegation of system element interfaces to the logical system boundary interfaces is covered.
+The Logical Internal Exchange Viewpoint</p>
+<ul>
+  <li>identifies system element interfaces on a logical level</li>
+  <li>states to which other logical elements the interfaces are connected to</li>
+  <li>assigns conceptual interface definitions to interfaces</li>
+  <li>defines the usage of interfaces, e.g., if only a subset of the interfaces is used</li>
+  <li>defines the delegation of logical system element interfaces to the logical system boundary interfaces</li>
+</ul>
+
+<h2 id="applicability">Applicability</h2>
+<p>The Logical Internal Exchange Viewpoint supports the “System Architecture Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.4] and contributes to the artifacts “System Architecture Description” and “System Interface Definition”.</p>
+
+<h2 id="presentation">Presentation</h2>
+
+<p>One or more IBDs featuring the SOI boundary, the logical elements of the SOI, as well as the connectors for each identified SOI interface delegation to logical SOI elements. An interface is a connection resource for hooking on the logical SOI elements to other logical SOI elements. Item flows are defined for each exchange on the identified interface.
+Note: Please use more than one IBD focused on different areas of interest to keep the view comprehensive.</p>
+
+<h2 id="stakeholder">Stakeholder</h2>
+<ul>
+
+
+<li><a href="../stakeholders.html#_19_0_2_26f0132_1562303526473_933874_92402"> Hardware Developer </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_26f0132_1562303526473_525021_92401"> IV&amp;V Engineer </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_26f0132_1562303526473_410133_92403"> Safety Expert </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1567337062655_160733_52757"> Security Expert </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_26f0132_1562303526473_98534_92400"> Software Developer </a></li>
+
+
+<li><a href="../stakeholders.html#_19_0_2_ebf0350_1555170687022_190510_43698"> System Architect </a></li>
+
+</ul>
+
+<h2 id="concern">Concern</h2>
+<ul>
+
+
+<li><a href="../concerns.html#_2021x_2_8710274_1674576758760_611640_23247"> How do the logical system elements interact to provide the system functions? </a></li>
+
+
+<li><a href="../concerns.html#_2021x_2_8710274_1674576758991_165534_23433"> What are the items exchanged between logical system elements during an interaction? </a></li>
+
+
+<li><a href="../concerns.html#_2021x_2_8710274_1674576758825_79081_23317"> Which conceptual items (energy, material, information, etc.) are exchanged within the system? </a></li>
+
+
+<li><a href="../concerns.html#_2021x_2_8710274_1674576758878_612030_23357"> Which requirements apply to a logical interface? </a></li>
+
+</ul>
+
+<h2 id="profile-model-reference">Profile Model Reference</h2>
+<p>The following Stereotypes / Model Elements are used in the Viewpoint:</p>
+
+<ul>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1681827927413_511049_24222"></a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1681817408348_216387_29249"></a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_3_26f0132_1614938958203_459716_5653">SAF_DomainKind</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1681827830138_917224_24184">realizingConnector</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_9_0_62a020a_1105704884574_96724_7644">Property</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1681818473370_517582_29594"></a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_8710274_1681818167067_310281_29495"></a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_9_0_62a020a_1105704884559_152470_7636">Connector</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_2021x_2_6d8019d_1692273490109_662219_24437">SAF_ConceptualInterfaceDefinition</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_11_5EAPbeta_be00301_1147436061009_177713_1911">FlowProperty</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_17_0_3_17530432_1320213131032_5397_2410">ProxyPort</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_11_0_be00301_1147691436170_978680_223">ItemFlow</a></li>
+
+
+<li><a href="/userdoc/stereotypes.html#_19_0_1_26f0132_1547201742246_537565_42154">SAF_LogicalElement</a></li>
+
+</ul>
+
+<h2 id="related-viewpoints">Related Viewpoints</h2>
+<h3 id="required-viewpoints">Required Viewpoints</h3>
+<ul>
+
+
+<li><a href="../Functional Domain/System Domain Item Kind Viewpoint.html">System Domain Item Kind Viewpoint</a></li>
+
+</ul>
+
+<h3 id="recommended-viewpoints">Recommended Viewpoints</h3>
+<ul>
+
+</ul>
