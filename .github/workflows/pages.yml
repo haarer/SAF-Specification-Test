@@ -43,6 +43,7 @@ jobs:
       - name: Configure
         shell: bash
         env:
+          TARGET_FOLDER: ""
           EXTRA_CONFIG: ${{ inputs.extra-config }}
         run: |
           [[ ${RUNNER_DEBUG:-0} -eq 1 ]] && set -x
