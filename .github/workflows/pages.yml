@@ -43,13 +43,14 @@ jobs:
       - name: Configure
         shell: bash
         env:
-          TARGET_FOLDER: version/${{ github.ref_name }}
           EXTRA_CONFIG: ${{ inputs.extra-config }}
         run: |
           [[ ${RUNNER_DEBUG:-0} -eq 1 ]] && set -x
           [[ "${{ github.ref_name }}" != "main" ]] && TARGET_FOLDER="${{ github.ref_name }}"
 
           REPO_NAME=$(jq -r ".repository.name" "$GITHUB_EVENT_PATH")
+          echo $TARGET_FOLDER
+          echo $REPO_NAME
 
           TEMP_CONFIG=$(mktemp)
           # avoid look up of API as it doesn't work from within actions without exposing the GITHUB_TOKEN here which is a security risk
