@@ -47,7 +47,7 @@ jobs:
           EXTRA_CONFIG: ${{ inputs.extra-config }}
         run: |
           [[ ${RUNNER_DEBUG:-0} -eq 1 ]] && set -x
-          [[ "${{ github.ref_name }}" != "main" ]] && TARGET_FOLDER= "${{ github.ref_name }}"
+          [[ "${{ github.ref_name }}" != "main" ]] && TARGET_FOLDER="${{ github.ref_name }}"
 
           REPO_NAME=$(jq -r ".repository.name" "$GITHUB_EVENT_PATH")
 
