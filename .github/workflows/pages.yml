@@ -89,7 +89,7 @@ jobs:
           branch: gh-pages
           folder: build
           force: false
-          target-folder: ${{  env.BRANCH_NAME != "main"  &&  env.BRANCH_NAME || "" }}
+          target-folder: ${{  env.BRANCH_NAME != 'main'  &&  env.BRANCH_NAME || "" }}
           clean-exclude: |
             pr-preview/
             version/
