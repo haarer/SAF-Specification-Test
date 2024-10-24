@@ -56,7 +56,7 @@ jobs:
           repository_nwo: ${GITHUB_REPOSITORY}
           EOF
 
-          if [[ -n "${TARGET_FOLDER}" ]]
+          if [[ "${{ github.ref_name }}" != "main" ]] 
           then
             echo "baseurl: /${REPO_NAME}/${TARGET_FOLDER}" >> ${TEMP_CONFIG}
           fi
